@@ -2,8 +2,14 @@ package com.javabrains.hibernate.entity;
 
 import java.util.Date;
 
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
 //import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
@@ -16,29 +22,29 @@ public class UserDetails {
 	
 	@Id
 	//@Column (name="USER_ID")  // @Column allows you to map a column to a property that doesn't match name wise
+	@GeneratedValue (strategy=GenerationType.AUTO)   // ask Hibernate to auto-generate this 
 	private int userId;
 	//@Column (name= "USER_NAME", nullable=false)
 	//@Basic (optional=false)
 	//@Transient   // makes it skip this field from a DB standpoint (column won't exist)
 	private String userName;
-	//@Temporal (TemporalType.DATE)  // allows you to specify whether it's a date, timestamp without tz (default), etc... 
+	@Temporal (TemporalType.DATE)  // allows you to specify whether it's a date, timestamp without tz (default), etc... 
 	private Date joinedDate;
-	private String address;
-	//@Lob // hibernate will determine whether BLOB or CLOB based on the java type (CLOB in this case)
+	@Lob // hibernate will determine whether BLOB or CLOB based on the java type (CLOB in this case)
 	private String description;
+	@Embedded // optional to point this out since Address is already @Embeddable
+	private Address address;
 	
-	public UserDetails() {
-		
-	}
+	@Embedded
+	// below list of overrides helps create a new group of embeddable columns but with different names (when there may be two)
+	@AttributeOverrides({
+		@AttributeOverride (name="street", column=@Column(name="work_street")),
+		@AttributeOverride (name="city",   column=@Column(name="work_city")),
+		@AttributeOverride (name="state",  column=@Column(name="work_state")),
+		@AttributeOverride (name="zipCode",column=@Column(name="work_zip"))	
+	})
+	private Address workAddress;
 	
-	public UserDetails(int userId, String userName, Date joinedDate, String address, String description) {
-		super();
-		this.userId = userId;
-		this.userName = userName;
-		this.joinedDate = joinedDate;
-		this.address = address;
-		this.description = description;
-	}
 
 	public int getUserId() {
 		return userId;
@@ -58,10 +64,10 @@ public class UserDetails {
 	public void setJoinedDate(Date joinedDate) {
 		this.joinedDate = joinedDate;
 	}
-	public String getAddress() {
+	public Address getAddress() {
 		return address;
 	}
-	public void setAddress(String address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 	public String getDescription() {
@@ -70,4 +76,12 @@ public class UserDetails {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	public Address getWorkAddress() {
+		return workAddress;
+	}
+	public void setWorkAddress(Address workAddress) {
+		this.workAddress = workAddress;
+	}
+	
+	
 }
