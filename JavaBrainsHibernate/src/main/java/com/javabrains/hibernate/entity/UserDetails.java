@@ -21,10 +21,10 @@ public class UserDetails {
 	//@Basic (optional=false)
 	//@Transient   // makes it skip this field from a DB standpoint (column won't exist)
 	private String userName;
-	@Temporal (TemporalType.DATE)  // allows you to specify whether it's a date, timestamp without tz (default), etc... 
+	//@Temporal (TemporalType.DATE)  // allows you to specify whether it's a date, timestamp without tz (default), etc... 
 	private Date joinedDate;
 	private String address;
-	@Lob // hibernate will determine whether BLOB or CLOB based on the java type (CLOB in this case)
+	//@Lob // hibernate will determine whether BLOB or CLOB based on the java type (CLOB in this case)
 	private String description;
 	
 	public UserDetails() {
