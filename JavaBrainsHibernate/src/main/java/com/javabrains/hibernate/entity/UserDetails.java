@@ -20,6 +20,11 @@ import javax.persistence.TemporalType;
 @Table (name="USER_DETAILS")      // keeps entity UserDetails but maps to a specific table
 public class UserDetails {
 	
+	/*  embeddable OBJECT that is used as the primary key
+	@EmbeddedId
+	private UserLogin userLogin
+	*/
+	
 	@Id
 	//@Column (name="USER_ID")  // @Column allows you to map a column to a property that doesn't match name wise
 	@GeneratedValue (strategy=GenerationType.AUTO)   // ask Hibernate to auto-generate this 
