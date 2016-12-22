@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import com.javabrains.hibernate.entity.Address;
+import com.javabrains.hibernate.entity.Contact;
 import com.javabrains.hibernate.entity.UserDetails;
 
 public class HibernateTest {
@@ -18,21 +19,12 @@ public class HibernateTest {
 		user.setUserName("User 1");
 		user.setJoinedDate(new Date());
 		user.setDescription("Description of user 1");
-		Address address = new Address();
-		address.setStreet("1907 Blah drive");
-		address.setCity("Wylie");
-		address.setState("TX");
-		address.setZipCode("75098");
 		
-		user.setAddress(address);
+		user.setAddress(getHomeAddress());
+		user.setWorkAddress(getWorkAddress());
 		
-		Address workAddress = new Address();
-		workAddress.setStreet("1950 Stemmons Frwy");
-		workAddress.setCity("Dallas");
-		workAddress.setState("TX");
-		workAddress.setZipCode("75074");
-		
-		user.setWorkAddress(workAddress);
+		user.addContact(getHomeContact());
+		user.addContact(getWorkContact());		
 		
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		
@@ -60,17 +52,51 @@ public class HibernateTest {
 			System.out.println(user.getUserId());
 			System.out.println(user.getAddress().getStreet());
 			System.out.println(user.getWorkAddress().getStreet());
+			for(Contact contact : user.getContacts() ) {
+				System.out.println(contact.toString());
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			session.close();
 		}
-		
-		
-		
-		
-		
 
+	}
+	
+	public static Address getHomeAddress() {
+		Address address = new Address();
+		address.setStreet("1907 Blah drive");
+		address.setCity("Wylie");
+		address.setState("TX");
+		address.setZipCode("75098");
+		
+		return address;
+	}
+	
+	public static Address getWorkAddress() {
+		Address workAddress = new Address();
+		workAddress.setStreet("1950 Stemmons Frwy");
+		workAddress.setCity("Dallas");
+		workAddress.setState("TX");
+		workAddress.setZipCode("75074");
+		
+		return workAddress;
+	}
+	
+	public static Contact getHomeContact() {
+		Contact contact = new Contact();
+		contact.setContactType("HOME");
+		contact.setPhoneNumber("972-444-HOME");
+		contact.setEmail("user1@home.com");
+		return contact;
+	}
+	
+	public static Contact getWorkContact() {
+		Contact contact = new Contact();
+		contact.setContactType("WORK");
+		contact.setPhoneNumber("972-444-WORK");
+		contact.setEmail("user1@work.com");
+		return contact;
 	}
 
 }

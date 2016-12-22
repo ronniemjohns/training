@@ -1,10 +1,13 @@
 package com.javabrains.hibernate.entity;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 //import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -39,6 +42,8 @@ public class UserDetails {
 	private String description;
 	@Embedded // optional to point this out since Address is already @Embeddable
 	private Address address;
+	@ElementCollection
+	private Set<Contact> contacts;
 	
 	@Embedded
 	// below list of overrides helps create a new group of embeddable columns but with different names (when there may be two)
@@ -87,6 +92,17 @@ public class UserDetails {
 	public void setWorkAddress(Address workAddress) {
 		this.workAddress = workAddress;
 	}
-	
+	public Set<Contact> getContacts() {
+		return contacts;
+	}
+	public void setContacts(Set<Contact> contacts) {
+		this.contacts = contacts;
+	}
+	public void addContact(Contact contact) {
+		if(this.contacts == null) {
+			contacts = new HashSet<>();
+		}
+		contacts.add(contact);
+	}
 	
 }
