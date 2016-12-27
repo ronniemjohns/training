@@ -1,8 +1,8 @@
 package com.javabrains.hibernate.entity;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
@@ -14,10 +14,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import org.hibernate.annotations.CollectionId;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 @Entity //(name="USER_DETAILS")   // not necessary, but a good way to specific if not defaulting it to classname
 @Table (name="USER_DETAILS")      // keeps entity UserDetails but maps to a specific table
@@ -43,7 +49,13 @@ public class UserDetails {
 	@Embedded // optional to point this out since Address is already @Embeddable
 	private Address address;
 	@ElementCollection
-	private Set<Contact> contacts;
+	@JoinTable(name="user_contacts",
+			joinColumns=@JoinColumn(name="USER_ID")  // makes new column in user_contacts be called USER_ID instead of userdetails_userid
+	) 
+	@GenericGenerator(name = "sequence-gen", strategy = "sequence") //NOTE:  this is not JPA compliant, this is hibernate specific
+	@CollectionId(columns = { @Column(name="CONTACT_ID") }, generator = "sequence-gen", type = @Type(type = "long"))      //NOTE:  this is not JPA compliant, this is hibernate specific
+
+	private Collection<Contact> contacts = new ArrayList<>();
 	
 	@Embedded
 	// below list of overrides helps create a new group of embeddable columns but with different names (when there may be two)
@@ -92,16 +104,13 @@ public class UserDetails {
 	public void setWorkAddress(Address workAddress) {
 		this.workAddress = workAddress;
 	}
-	public Set<Contact> getContacts() {
+	public Collection<Contact> getContacts() {
 		return contacts;
 	}
-	public void setContacts(Set<Contact> contacts) {
+	public void setContacts(Collection<Contact> contacts) {
 		this.contacts = contacts;
 	}
 	public void addContact(Contact contact) {
-		if(this.contacts == null) {
-			contacts = new HashSet<>();
-		}
 		contacts.add(contact);
 	}
 	
