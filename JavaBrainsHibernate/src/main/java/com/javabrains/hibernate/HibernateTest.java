@@ -2,6 +2,7 @@ package com.javabrains.hibernate;
 
 import java.util.Date;
 
+import org.hibernate.LazyInitializationException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -60,6 +61,22 @@ public class HibernateTest {
 		} finally {
 			session.close();
 		}
+		
+		System.out.println("START of lazy fetching.  Note that the SQL will only be to user_details.");
+		try {
+			user = null;
+			session = sessionFactory.openSession();
+			user = session.get(UserDetails.class, 1);  // by default, it will NOT get the contacts (stored in a different table)
+			session.close();
+			System.out.println(user.getContacts().size());  // BUT THIS will cause hibernate to go get it (lazy fetching)
+		} catch (LazyInitializationException lie) {
+			System.out.println("since we closed the session BEFORE getting the contacts, it throws an exception");
+		} finally {
+			session.close();
+		}
+
+		
+		
 
 	}
 	

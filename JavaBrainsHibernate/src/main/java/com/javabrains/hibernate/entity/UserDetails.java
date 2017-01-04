@@ -11,6 +11,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 //import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -48,13 +49,12 @@ public class UserDetails {
 	private String description;
 	@Embedded // optional to point this out since Address is already @Embeddable
 	private Address address;
-	@ElementCollection
+	@ElementCollection(fetch=FetchType.EAGER)
 	@JoinTable(name="user_contacts",
 			joinColumns=@JoinColumn(name="USER_ID")  // makes new column in user_contacts be called USER_ID instead of userdetails_userid
 	) 
-	@GenericGenerator(name = "sequence-gen", strategy = "sequence") //NOTE:  this is not JPA compliant, this is hibernate specific
-	@CollectionId(columns = { @Column(name="CONTACT_ID") }, generator = "sequence-gen", type = @Type(type = "long"))      //NOTE:  this is not JPA compliant, this is hibernate specific
-
+	//@GenericGenerator(name = "sequence-gen", strategy = "sequence") //NOTE:  this is not JPA compliant, this is hibernate specific
+	//@CollectionId(columns = { @Column(name="CONTACT_ID") }, generator = "sequence-gen", type = @Type(type = "long"))      //NOTE:  this is not JPA compliant, this is hibernate specific
 	private Collection<Contact> contacts = new ArrayList<>();
 	
 	@Embedded
