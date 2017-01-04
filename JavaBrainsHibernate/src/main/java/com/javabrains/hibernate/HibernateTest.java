@@ -7,9 +7,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.javabrains.hibernate.entity.Address;
-import com.javabrains.hibernate.entity.Contact;
-import com.javabrains.hibernate.entity.UserDetails;
+import com.javabrains.hibernate.model.Address;
+import com.javabrains.hibernate.model.Contact;
+import com.javabrains.hibernate.model.UserDetails;
+import com.javabrains.hibernate.model.Vehicle;
 
 public class HibernateTest {
 
@@ -27,6 +28,11 @@ public class HibernateTest {
 		user.addContact(getHomeContact());
 		user.addContact(getWorkContact());		
 		
+		Vehicle vehicle = new Vehicle();
+		vehicle.setVehicleName("Main car");
+		
+		user.setVehicle(vehicle);
+		
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		
 		// save a user
@@ -35,6 +41,7 @@ public class HibernateTest {
 			session = sessionFactory.openSession();
 			session.beginTransaction();		
 			session.save(user);
+			session.save(vehicle);
 			session.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -47,7 +54,6 @@ public class HibernateTest {
 		user = null;
 		try {
 			session = sessionFactory.openSession();
-			session.beginTransaction();		
 			user = session.get(UserDetails.class, 1);  // no SQL statement since we're getting it straight from the id
 			System.out.println(user.getDescription());
 			System.out.println(user.getUserId());

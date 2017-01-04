@@ -1,4 +1,4 @@
-package com.javabrains.hibernate.entity;
+package com.javabrains.hibernate.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,20 +11,16 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 //import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.Lob;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
-import org.hibernate.annotations.CollectionId;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
 
 @Entity //(name="USER_DETAILS")   // not necessary, but a good way to specific if not defaulting it to classname
 @Table (name="USER_DETAILS")      // keeps entity UserDetails but maps to a specific table
@@ -49,7 +45,7 @@ public class UserDetails {
 	private String description;
 	@Embedded // optional to point this out since Address is already @Embeddable
 	private Address address;
-	@ElementCollection(fetch=FetchType.EAGER)
+	@ElementCollection  //(fetch=FetchType.EAGER)
 	@JoinTable(name="user_contacts",
 			joinColumns=@JoinColumn(name="USER_ID")  // makes new column in user_contacts be called USER_ID instead of userdetails_userid
 	) 
@@ -67,7 +63,10 @@ public class UserDetails {
 	})
 	private Address workAddress;
 	
-
+	@OneToOne
+	@JoinColumn(name="VEHICLE_ID")
+	private Vehicle vehicle;
+	
 	public int getUserId() {
 		return userId;
 	}
@@ -112,6 +111,12 @@ public class UserDetails {
 	}
 	public void addContact(Contact contact) {
 		contacts.add(contact);
+	}
+	public Vehicle getVehicle() {
+		return vehicle;
+	}
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
 	}
 	
 }

@@ -1,4 +1,4 @@
-package com.javabrains.hibernate.entity;
+package com.javabrains.hibernate.model;
 
 import javax.persistence.Embeddable;
 
