@@ -1,5 +1,7 @@
 package com.javabrains.hibernate;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 import org.hibernate.LazyInitializationException;
@@ -9,6 +11,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.javabrains.hibernate.model.Address;
 import com.javabrains.hibernate.model.Contact;
+import com.javabrains.hibernate.model.Job;
 import com.javabrains.hibernate.model.UserDetails;
 import com.javabrains.hibernate.model.Vehicle;
 
@@ -28,10 +31,12 @@ public class HibernateTest {
 		user.addContact(getHomeContact());
 		user.addContact(getWorkContact());		
 		
-		Vehicle vehicle = new Vehicle();
-		vehicle.setVehicleName("Main car");
+		Collection<Vehicle> vehicles = getCars(user);
+		user.setVehicles(vehicles);
 		
-		user.setVehicle(vehicle);
+		Job job = getJob();
+		user.setJob(job);
+		
 		
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		
@@ -41,7 +46,10 @@ public class HibernateTest {
 			session = sessionFactory.openSession();
 			session.beginTransaction();		
 			session.save(user);
-			session.save(vehicle);
+			session.save(job);
+			for(Vehicle vehicle : vehicles) {
+				session.save(vehicle);
+			}
 			session.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -55,13 +63,7 @@ public class HibernateTest {
 		try {
 			session = sessionFactory.openSession();
 			user = session.get(UserDetails.class, 1);  // no SQL statement since we're getting it straight from the id
-			System.out.println(user.getDescription());
-			System.out.println(user.getUserId());
-			System.out.println(user.getAddress().getStreet());
-			System.out.println(user.getWorkAddress().getStreet());
-			for(Contact contact : user.getContacts() ) {
-				System.out.println(contact.toString());
-			}
+			System.out.println(user.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -80,10 +82,6 @@ public class HibernateTest {
 		} finally {
 			session.close();
 		}
-
-		
-		
-
 	}
 	
 	public static Address getHomeAddress() {
@@ -120,6 +118,34 @@ public class HibernateTest {
 		contact.setPhoneNumber("972-444-WORK");
 		contact.setEmail("user1@work.com");
 		return contact;
+	}
+	
+	public static Collection<Vehicle> getCars(UserDetails user) {
+		Collection<Vehicle> cars = new ArrayList<>();
+		Vehicle ronniesCar = new Vehicle();
+		ronniesCar.setVehicleName("Ronnie's car");
+		ronniesCar.setOwner(user);
+		
+		Vehicle veronicasCar = new Vehicle();
+		veronicasCar.setVehicleName("Veronica's car");
+		veronicasCar.setOwner(user);
+		
+		Vehicle delaneysCar = new Vehicle();
+		delaneysCar.setVehicleName("Delaney's car");
+		delaneysCar.setOwner(user);
+
+		cars.add(ronniesCar);
+		cars.add(veronicasCar);
+		cars.add(delaneysCar);
+		
+		return cars;
+	}
+	
+	public static Job getJob() {
+		Job job = new Job();
+		job.setEmployerName("XO");
+		job.setSalary(100000.00);
+		return job;
 	}
 
 }

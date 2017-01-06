@@ -62,6 +62,7 @@
         
         <mapping class="com.javabrains.hibernate.model.UserDetails"/>
         <mapping class="com.javabrains.hibernate.model.Vehicle"/>
+        <mapping class="com.javabrains.hibernate.model.Job"/>
     </session-factory>
  
 </hibernate-configuration>

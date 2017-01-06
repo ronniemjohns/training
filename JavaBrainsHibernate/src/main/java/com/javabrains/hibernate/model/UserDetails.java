@@ -17,13 +17,14 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.Lob;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity //(name="USER_DETAILS")   // not necessary, but a good way to specific if not defaulting it to classname
-@Table (name="USER_DETAILS")      // keeps entity UserDetails but maps to a specific table
+@Table (name="USERS")      // keeps entity UserDetails but maps to a specific table
 public class UserDetails {
 	
 	/*  embeddable OBJECT that is used as the primary key
@@ -63,9 +64,16 @@ public class UserDetails {
 	})
 	private Address workAddress;
 	
+	@OneToMany
+	@JoinTable(name="USER_VEHICLES",
+			joinColumns=@JoinColumn(name="USER_ID"),  // makes new column in user_contacts be called USER_ID instead of userdetails_userid
+			inverseJoinColumns=@JoinColumn(name="VEHICLE_ID")
+	) 
+	private Collection<Vehicle> vehicles = new ArrayList<>();
+	
 	@OneToOne
-	@JoinColumn(name="VEHICLE_ID")
-	private Vehicle vehicle;
+	@JoinColumn(name="EMPLOYER_ID")// optional
+	private Job job;
 	
 	public int getUserId() {
 		return userId;
@@ -112,11 +120,25 @@ public class UserDetails {
 	public void addContact(Contact contact) {
 		contacts.add(contact);
 	}
-	public Vehicle getVehicle() {
-		return vehicle;
+	public Collection<Vehicle> getVehicles() {
+		return vehicles;
 	}
-	public void setVehicle(Vehicle vehicle) {
-		this.vehicle = vehicle;
+	public void setVehicles(Collection<Vehicle> vehicles) {
+		this.vehicles = vehicles;
 	}
+	public Job getJob() {
+		return job;
+	}
+	public void setJob(Job job) {
+		this.job = job;
+	}
+	@Override
+	public String toString() {
+		return "UserDetails [userId=" + userId + ", userName=" + userName + ", joinedDate=" + joinedDate
+				+ ", description=" + description + ", address=" + address + ", contacts=" + contacts + ", workAddress="
+				+ workAddress + ", vehicles=" + vehicles + ", job=" + job + "]";
+	}
+
+	
 	
 }
