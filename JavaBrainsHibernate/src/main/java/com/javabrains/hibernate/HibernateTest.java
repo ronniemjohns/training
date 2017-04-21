@@ -12,6 +12,7 @@ import org.hibernate.cfg.Configuration;
 import com.javabrains.hibernate.model.Address;
 import com.javabrains.hibernate.model.Contact;
 import com.javabrains.hibernate.model.Job;
+import com.javabrains.hibernate.model.Pet;
 import com.javabrains.hibernate.model.UserDetails;
 import com.javabrains.hibernate.model.Vehicle;
 
@@ -37,6 +38,9 @@ public class HibernateTest {
 		Job job = getJob();
 		user.setJob(job);
 		
+		Collection<Pet> pets = getPets(user);
+		user.setPets(pets);
+		
 		
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		
@@ -47,8 +51,11 @@ public class HibernateTest {
 			session.beginTransaction();		
 			session.save(user);
 			session.save(job);
-			for(Vehicle vehicle : vehicles) {
+			for(Vehicle vehicle : user.getVehicles()) {
 				session.save(vehicle);
+			}
+			for(Pet pet : user.getPets()) {
+				session.save(pet);
 			}
 			session.getTransaction().commit();
 		} catch (Exception e) {
@@ -84,6 +91,8 @@ public class HibernateTest {
 		}
 	}
 	
+
+
 	public static Address getHomeAddress() {
 		Address address = new Address();
 		address.setStreet("1907 Blah drive");
@@ -146,6 +155,24 @@ public class HibernateTest {
 		job.setEmployerName("XO");
 		job.setSalary(100000.00);
 		return job;
+	}
+	
+	public static Collection<Pet> getPets(UserDetails user) {
+		Collection<Pet> pets = new ArrayList<>();
+		
+		Pet enzo = new Pet();
+		enzo.setOwner(user);
+		enzo.setPetName("Enzo");
+		enzo.setPetType("Dog");
+		pets.add(enzo);
+		
+		Pet mrKibbles = new Pet();
+		mrKibbles.setOwner(user);
+		mrKibbles.setPetName("Mr. Kibbles");
+		mrKibbles.setPetType("Guinea Pig");
+		pets.add(mrKibbles);
+		
+		return pets;
 	}
 
 }

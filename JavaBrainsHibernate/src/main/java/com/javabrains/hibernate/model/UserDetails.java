@@ -75,6 +75,9 @@ public class UserDetails {
 	@JoinColumn(name="EMPLOYER_ID")// optional
 	private Job job;
 	
+	@OneToMany(mappedBy="owner")
+	private Collection<Pet> pets = new ArrayList<>();
+	
 	public int getUserId() {
 		return userId;
 	}
@@ -132,11 +135,18 @@ public class UserDetails {
 	public void setJob(Job job) {
 		this.job = job;
 	}
+	public Collection<Pet> getPets() {
+		return pets;
+	}
+	public void setPets(Collection<Pet> pets) {
+		this.pets = pets;
+	}
+	
 	@Override
 	public String toString() {
 		return "UserDetails [userId=" + userId + ", userName=" + userName + ", joinedDate=" + joinedDate
 				+ ", description=" + description + ", address=" + address + ", contacts=" + contacts + ", workAddress="
-				+ workAddress + ", vehicles=" + vehicles + ", job=" + job + "]";
+				+ workAddress + ", vehicles=" + vehicles + ", job=" + job + ", pets=" + pets + "]";
 	}
 
 	
