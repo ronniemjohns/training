@@ -1,6 +1,8 @@
 WicketGradle/
 WicketProject/
 mywicketproject/
-**/.idea/workspace.xml
-**/.idea/tasks.xml
-
+/**/.idea/workspace.xml
+/**/.idea/tasks.xml
+**/*workspace.xml
+TeamTreehouse/html/.idea/workspace.xml
+TeamTreehouse/html/**/workspace.xml
