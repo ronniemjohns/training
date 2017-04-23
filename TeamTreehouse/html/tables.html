@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- border is pixels AROUND (only) the table.  cellpadding increases space both vertically and horizontally
+         cellspacing increases the space of the borders inside the table  -->
+    <table border="5" cellpadding="5"  cellspacing="5">
+        <!-- table head, table footer, table body add semantic meaning to a table, making them easier to navigate for screen readers
+             search engines and future web browsing devices  -->
+        <thead>
+        <!-- table row -->
+            <tr>
+                <!-- table header - adds centering and bolding -->
+                <th>These are <br>my favorite Fruits</th>
+                <th valign="top">Vegetables</th>
+            </tr>
+        </thead>
+        <!-- table footer - goes at the bottom DESPITE not being down there in this page.  -->
+        <tfoot>
+            <tr>
+                <!-- notice column span across 2 columns -->
+                <td colspan="2" align="center">Thanks for reading!</td>
+            </tr>
+        </tfoot>
+        <tr>
+            <!-- table data -->
+            <td>Oranges</td>
+            <td>Carrots</td>
+        </tr>
+        <tr>
+            <td>Apples</td>
+            <td>Broccoli</td>
+        </tr>
+        <tr>
+            <td>Strawberries</td>
+            <td>Asparagus</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Potatoes</td>
+        </tr>
+    </table>
+</body>
+</html>
