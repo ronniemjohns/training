@@ -40,14 +40,33 @@ h3 {
   border-top: 2px solid lightgrey;
 }
 
+/*  pseudo classes below.  styles added when for a special STATE of an element */
+/* a -> links, p-> paragraph, etc... */
+a:link {
+  color: orange;
+}
 
+a:visited {
+  color: lightblue;
+}
 
+a:hover {
+  color: forestgreen;
+}
 
+p:hover {
+  background-color: yellow;
+}
 
+a:active {
+  color: lightcoral;
+}
 
-
-
-
+/*  test this by clicking TAB to go from link to link  */
+a:focus {
+  color: white;
+  background-color: orange
+}
 
 
 
