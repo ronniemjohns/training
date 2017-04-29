@@ -21,3 +21,14 @@ h3 {
   font-size: 20px;
   color: #48525c;
 }
+
+/*  id selectors, which use an id name in the HTML file */
+#primary-content {
+  border: 3px solid red;
+}
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange;
+}

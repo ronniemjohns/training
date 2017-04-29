@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-header {
+.main-header {
   background-color: orange;
 }
 
@@ -21,9 +21,7 @@ h3 {
   color: #48525c;
 }
 
-#primary-content {
-  border: 3px solid red;
-}
+
 
 #main-footer {
   padding-top: 60px;
@@ -31,8 +29,15 @@ h3 {
   border-bottom: solid 10px orange;
 }
 
+/*  class selectors defined as .classname  */
+.primary-content {
+  text-align: center;
+}
 
+.secondary-content {
+  border-top: 2px solid lightgrey;
 
+}
 
 
 

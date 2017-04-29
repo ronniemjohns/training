@@ -7,6 +7,25 @@ body {
   background-color: orange;
 }
 
+/* descendent selector  The below says any span element in the header element
+They're commonly used to style lists */
+header span {
+  color: white;
+  font-size: 26px;
+}
+
+ul li {
+  background-color: tomato;
+  color: white;
+  margin-bottom: 5px;
+}
+
+ol li {
+  background-color: white;
+  color: tomato;
+  margin-bottom: 5px;
+}
+
 h1 {  
   font-size: 90px;
   color: white;

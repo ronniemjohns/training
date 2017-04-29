@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+/*  this overwrites the .main-header CLASS selector, so be careful... */
+#top {
+  background-color: red;
+}
+
 .main-header {
   background-color: orange;
 }
@@ -26,9 +31,13 @@ h3 {
 }
 
 .secondary-content {
-  border-top: 2px solid lightgrey;
+
 }
 
+/* add a top border to make it easily added to various elements as classes */
+.t-border {
+  border-top: 2px solid lightgrey;
+}
 #main-footer {
   padding-top: 60px;
   padding-bottom: 60px;

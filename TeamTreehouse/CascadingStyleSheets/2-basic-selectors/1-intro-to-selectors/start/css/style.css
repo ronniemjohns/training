@@ -1,0 +1,32 @@
+/* universal selector - chooses EVERYTHING and overwrites EVERYTHING */
+/* note below i use // which comments out the next CSS construct (selector or property)
+//* {
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+/* type selectors (aka element selectors) */
+body {
+    color: #878787;
+    margin: 0;
+}
+
+header {
+    background-color: orange;
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+}
+
+h2 {
+    font-size: 53px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #48525c;
+}
+
