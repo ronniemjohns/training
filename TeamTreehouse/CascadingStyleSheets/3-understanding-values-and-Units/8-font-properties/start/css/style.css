@@ -4,6 +4,8 @@ body {
   color: #878787;
   margin: 0;
   font-size: 1em; /* 16px */
+  font-family: Helvetica, Arial, sans-serif;   /*  notice font STACK, so it chooses in order which ones depending on what's available in that client browser */
+  font-style: italic;
 }
 
 h1 {  
