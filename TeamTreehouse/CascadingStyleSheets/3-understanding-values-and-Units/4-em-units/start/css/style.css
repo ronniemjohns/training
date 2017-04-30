@@ -3,11 +3,12 @@
 body {
   color: #878787;
   margin: 0;
-  font-size: 150%;
+  font-size: 1em;  /* equivalent to default value of 16px */
+  /*  EM vs PT vs % vs PX - http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/ */
 }
 
 h1 {  
-  font-size: 90px;
+  font-size: 5.625em;  /*  90/16 = 5.625em  */
   color: white;
 }
 
@@ -52,9 +53,10 @@ a:active {
   background-color: orange;
 }
 
+/*  this actually takes it font-size as a RELATIVE size of the body (from where it inherits).  So 3em would be 3 times whatever the body is */
 .title {
   color: white;
-  font-size: 26px;
+  font-size: 1.625em;  /* 26 px (26/16px)  */
 }
 
 .primary-content, 

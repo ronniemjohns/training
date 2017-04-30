@@ -1,5 +1,6 @@
 /* Type Selectors ------------------ */
 
+/*  REM = root element (always relates back to root element (which is 16px by default))    */
 body {
   color: #878787;
   margin: 0;
@@ -7,7 +8,7 @@ body {
 }
 
 h1 {  
-  font-size: 5.625em; /* 90px / 16px  */
+  font-size: 5.625rem; /* 90px / 16px  */
   color: white;
 }
 
@@ -55,7 +56,7 @@ a:active {
 
 .title {
   color: white;
-  font-size: 1.625em; /* 26px/16px */
+  font-size: 1.625rem; /* 26px/16px */
 }
 
 .primary-content, 

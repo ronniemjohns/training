@@ -19,6 +19,10 @@ h3 {
   color: #48525c;
 }
 
+p {
+  font-size: 150%;
+}
+
 /* Pseudo-classes ------------------ */
 
 a:link {
@@ -49,12 +53,15 @@ a:active {
 
 .main-header {
   background-color: orange;
-  width: 960px;
 }
 
 .title {
   color: white;
   font-size: 26px;
+}
+/*  notice this is 2 classes together !  */
+.primary-content, .secondary-content {
+  width: 60%;
 }
 
 .primary-content {
