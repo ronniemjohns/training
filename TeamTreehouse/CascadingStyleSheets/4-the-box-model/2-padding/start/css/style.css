@@ -85,5 +85,23 @@ a:active {
   width: 60%;
 }
 
+.wildlife {
+  color: white;
+  background-color: #434a52;
+  /*
+  padding-top: 100px;
+  padding-right: 120px;
+  padding-bottom: 100px;
+  padding-left:  120px;
+  */
+  /*  if one value, then all 4 sides.
+      if 2 values, 1st is top & bottom, 2nd is right & left.
+      If 3 values, 1st is top, 2nd is right & left, 3rd is bottom
+      if 4 values, 1st is top, 2nd is right, 3rd bottom, 4th left  (CLOCKWISE)
+   */
+  //padding: 100px 120px 100px 120px;   /* same as 100px  120px since they're the same */
+  padding:  18% 24%;    /*  note this is based on the % of the WIDTH */
+}
+
 
 

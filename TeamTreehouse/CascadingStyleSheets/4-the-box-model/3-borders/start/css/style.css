@@ -88,8 +88,17 @@ a:active {
 .wildlife {
   color: white;
   background-color: #434a52;
- 
   padding: 18% 24%;
+
+  /*
+  border-width: 10px 20px;
+  border-style: groove dotted;
+  border-color: orange aqua;
+  */
+
+  /*  by default border color is the same as text */
+  border: 10px groove orange;
+  border-bottom-style: dashed;
 }
 
 

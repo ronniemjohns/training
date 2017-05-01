@@ -28,12 +28,18 @@ h3 {
   margin-bottom: 1.7em; /* 34px */
 }
 
+/* inline-block is kind of a hybrid that allows top/bottom margin (like a block element) but still shows inline */
+/*li {
+  display: inline;
+  padding: 0px 12px;
+  border-right: solid 1px;
+
+}*/
 /* Pseudo-classes ------------------ */
 
 a:link {
   color: rgb(255, 169, 73);
   text-decoration: none;
-
 }
 
 a:visited {
@@ -70,6 +76,14 @@ a:active {
   text-align: center;
 }
 
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 .main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -99,9 +113,10 @@ a:active {
 	margin-bottom: 60px;
 	margin-left: 0;
 */
-  
   margin: 105px 0 60px;
 }
+
+
 
 
 
