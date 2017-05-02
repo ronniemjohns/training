@@ -91,6 +91,7 @@ a:active {
 	padding-top: 80px;
 	padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
+  //overflow: auto;  /*  this WOULD fix our overflow problem, but can suck */
 }
 
 .callout {

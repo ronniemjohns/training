@@ -62,6 +62,14 @@ a:active {
   background-color: #ffa949;
   padding-top: 170px;
   height: 850px;
+  background-image: url('../img/mountains.jpg');
+  background-size: cover;  /*  note this does both the background size (percentage) and cover, which scales it perfectly to image size for you */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* this declaration does all of the above (confusingly in my opinion)
+  background: #ffa949 url('../img/mountains.jpg') no-repeat center / cover;
+  */
 }
 
 .title {

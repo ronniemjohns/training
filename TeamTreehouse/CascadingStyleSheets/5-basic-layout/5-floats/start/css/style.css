@@ -91,6 +91,7 @@ a:active {
 	padding-top: 80px;
 	padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
+
 }
 
 .callout {
@@ -137,10 +138,19 @@ a:active {
 }
 
 
+/* Floated Columns ------------------ */
+.resorts,
+.tips {
+  width: 46.5%;
+}
 
+.tips {
+  float: right;
+}
 
-
-
+.resorts {
+  float: left;
+}
 
 
 

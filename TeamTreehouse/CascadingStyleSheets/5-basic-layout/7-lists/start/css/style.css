@@ -37,6 +37,25 @@ img {
   margin-bottom: 20px;
 }
 
+
+ul {
+  //list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+li {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
 /* Pseudo-classes ------------------ */
 
 a:link {
