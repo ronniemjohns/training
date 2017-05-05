@@ -74,6 +74,17 @@ a:active {
   height: 850px;
   background: #ffa949 url('../img/mountains.jpg') no-repeat center;
   background-size: cover;
+
+  /*  default is top to bottom.  other options:
+     to top (bottom to top)
+     to left (left side to right side)
+     to right (right side to left side)
+     background-image: linear-gradient(to top, orange, firebrick);
+     alternately use ##deg which can uses angles
+   */
+  //background-image: linear-gradient(45deg, orange, firebrick);
+  /* default radial gradient = an ellipse.  */
+  background-image: radial-gradient(circle at top, orange, firebrick);
 }
 
 .title {
