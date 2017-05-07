@@ -24,7 +24,7 @@ a {
 
 /* ---- Layout Containers ---- */
 
-.wrapper {
+.container {
 	width: 70%;
 	margin: 0 auto;
 }
@@ -37,6 +37,8 @@ a {
 .main-footer {
 	padding: 2em 0;
 	background: #d9e4ea;
+	text-align: center;
 }
+
 
 /* ---- Page Elements ---- */
