@@ -1,0 +1,17 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.item-6 {
+	order: -1;   /*  default is 0, so anything under 0 makes it show up before the others */
+}
+
+.item-3 {
+	order: 1;
+}

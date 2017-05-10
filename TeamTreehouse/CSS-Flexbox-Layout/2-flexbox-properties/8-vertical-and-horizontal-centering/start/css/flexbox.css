@@ -1,0 +1,31 @@
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	min-height: 50vh;
+
+	/*  3 ways to make this perfectly centered horizontally and veritcally  */
+	/* one:
+	justify-content: center;
+	align-items: center;
+	*/
+
+	/* two:
+	justify-content: center;
+
+	separate:
+	.item {
+	   align-self: center;
+	}
+	 */
+
+	/* three:
+	.item {
+	   margin: auto;
+	}
+	 */
+
+}

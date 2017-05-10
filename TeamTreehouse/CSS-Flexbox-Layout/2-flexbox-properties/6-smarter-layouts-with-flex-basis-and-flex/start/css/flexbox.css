@@ -1,0 +1,21 @@
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex-grow: 1;
+	//flex-basis: 200px;
+
+	/* flex = flex-grow, flex-basis and flex-shrink  */
+	flex: 1 200px;
+}
+
+.item-2 {
+	flex-grow: 2;
+}
