@@ -11,3 +11,12 @@ function print(message) {
   div.innerHTML = message;
 }
 
+var message = '<p>Hello.  My name is ' + person.name + '</p>';
+message += '<p> I live in the ' + person.country + '</p>';
+person.ethnicity = 'Caucasion';
+message += '<p>I am ' + person.ethnicity + '</p>';
+person.name = 'Rainbow Dash';
+message += '<p>But I wish my name was ' + person.name + '</p>';
+
+print(message);
+

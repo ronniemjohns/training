@@ -30,3 +30,21 @@ var students = [
     points: '350'
   }
 ];
+
+for(var i=0; i < students.length; i++) {
+  var studentOutput = buildList(students[i]);
+  document.write(studentOutput);
+}
+
+function buildList(student) {
+  console.log(student.track + ": " + student.length);
+    var listHTML = '<ul>';
+    for(var key in student) {
+        console.log(key);
+        listHTML += '<li>' + key + ":  " + student[key] + '</li>';
+        console.log(key);
+    }
+
+    listHTML += '</ul>';
+    return listHTML;
+}

@@ -6,3 +6,7 @@ var person = {
   skills : ['JavaScript', 'HTML', 'CSS']
 };
 
+
+for(var key in person ) {
+  console.log(key , ": " , person[key]);
+}
