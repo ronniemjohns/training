@@ -1,0 +1,19 @@
+/* Structural Pseudo-classes------------------ */
+
+/* important to realize that the # isn't the nth child of a specific type,
+   it's actually the nth child of a parent only if that child happens to be nth */
+div:nth-child(4) {
+  background: #52bab3;
+  color: white;
+}
+
+/* this is what you use to make sure you target the nth child regarldess of position as long as it's type whatever */
+div:nth-of-type(even) {
+  background: tomato;
+  color: white;
+}
+
+div:nth-last-of-type(2) {
+  background: green;
+  color: white;
+}

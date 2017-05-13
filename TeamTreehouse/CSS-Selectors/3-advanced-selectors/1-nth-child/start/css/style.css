@@ -1,0 +1,36 @@
+/* :nth-child Pseudo-classes------------------ */
+/* possible arguments: odd, even, a #   */
+li:nth-child( even ) {
+    background: #52bab3;
+    color: white;
+}
+
+li:nth-child( odd ) {
+    background: white;
+    color: tomato;
+}
+
+li:nth-child( 3 ) {
+    background: tomato;
+    color: white;
+}
+
+/*  every 2nd list item starting from the 3rd */
+li:nth-child( 2n+3 ) {
+    background: green;
+    color: white;
+}
+
+/*  every one starting at the 4th one
+li:nth-child( n+4 ) {
+    background: green;
+    color: white;
+}
+
+Can also use negative values:
+*/
+/*  every child that precedes number 3 (1,2,3) */
+li:nth-child( -n+3 ) {
+    background: green;
+    color: white;
+}
