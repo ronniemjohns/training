@@ -13,7 +13,7 @@ let tableHtml = `
     <tbody>
       <tr>
         <td>${student.name}</td>
-        <td></td>
+        <td>${student.followerCount}</td>
       </tr>
     </tbody>
   </table>`;
