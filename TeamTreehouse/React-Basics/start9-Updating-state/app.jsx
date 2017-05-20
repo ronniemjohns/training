@@ -27,21 +27,44 @@ Header.propTypes = {
     title: React.PropTypes.string.isRequired,
 };
 
+var Counter = React.createClass({
+    propTypes: {
+        initialScore: React.PropTypes.number.isRequired,
+    },
 
-function Counter(props) {
-    return (
-        <div className="counter">
-            <button className="counter-action decrement"> - </button>
-            <div className="counter-score">{props.score}</div>
-            <button className="counter-action increment"> + </button>
-        </div>
-    );
-}
+    getInitialState: function() {
+        return {
+            score: this.props.initialScore,
+        }
+    },
 
-Counter.propTypes = {
-    score: React.PropTypes.number.isRequired
-}
+    incrementScore: function(e) {
+        // always use this.setState instead of just saying this.state.score++ because that's what tells react to re-render itself.
+        this.setState({
+            score: this.state.score + 1
+        });
+    },
 
+    decrementScore: function(e) {
+        this.setState({
+            score: this.state.score - 1
+        });
+    },
+
+    /* note that it's this.decrementScore, NOT this.decrementScore().  The latter passes the function
+    Which would result in it being called once everytime it's loaded.  The former passes the function OBJECT to the button
+    */
+    render: function() {
+        return (
+            <div className="counter">
+                <button className="counter-action decrement" onClick={this.decrementScore}> - </button>
+                <div className="counter-score">{this.state.score}</div>
+                <button className="counter-action increment" onClick={this.incrementScore}> + </button>
+            </div>
+        )
+    },
+
+});
 
 
 function Player(props) {
@@ -49,7 +72,7 @@ function Player(props) {
         <div className="player">
             <div className="player-name">{props.name}</div>
             <div className="player-score">
-                <Counter score={props.score}  />
+                <Counter initialScore={props.score}  />
             </div>
         </div>
     );
