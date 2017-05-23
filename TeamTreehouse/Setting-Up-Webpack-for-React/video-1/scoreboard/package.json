@@ -1,11 +1,10 @@
 {
   "name": "scoreboard",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --port 8000 --progress"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +18,6 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.4"
-  },
-  "description": ""
+    "webpack": "^2.2.1"
+  }
 }

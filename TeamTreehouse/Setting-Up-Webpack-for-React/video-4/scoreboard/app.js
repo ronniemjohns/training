@@ -2,6 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// css
+import './css/style.css';
+
 const INITIAL_STATE = {
   players: [
     {
