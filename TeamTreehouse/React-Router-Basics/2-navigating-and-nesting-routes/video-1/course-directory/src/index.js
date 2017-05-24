@@ -16,10 +16,12 @@ import Teachers from './components/Teachers';
 // Render
 render((
   <Router history={hashHistory}>
-    <Route path="/" component={Home} />
-    <Route path="about" component={About} />
-    <Route path="teachers" component={Teachers} />
-    <Route path="courses" component={Courses} />
+    <Route component={App}>       // note lack of path, which means ALWAYS render App no matter the URL.
+        <Route path="/" component={Home} />
+        <Route path="about" component={About} />
+        <Route path="teachers" component={Teachers} />
+        <Route path="courses" component={Courses} />
+    </Route>
   </Router>
 ), document.getElementById('root'));
 

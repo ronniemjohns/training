@@ -13,6 +13,7 @@ class App extends Component {
             <li><a href="/courses">Courses</a></li>
           </ul>       
         </header>
+        {this.props.children}
       </div>
     );
   }

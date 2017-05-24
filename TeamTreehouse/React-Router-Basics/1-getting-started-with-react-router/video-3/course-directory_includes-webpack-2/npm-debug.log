@@ -1,0 +1,1469 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\plr3269\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.5.0
+3 info using node@v4.2.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData react
+20 silly mapToRegistry name react
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+23 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react
+24 silly fetchNamedPackageData react-dom
+25 silly mapToRegistry name react-dom
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+28 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom
+29 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom
+30 verbose request always-auth set; sending authorization
+31 info attempt registry request try #1 at 10:49:05 AM
+32 verbose request id d5a5596034346499
+33 verbose etag bd60fc044ccbdd1a8a3db66636fb3ab45fb0e887
+34 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom
+35 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react
+36 verbose request always-auth set; sending authorization
+37 info attempt registry request try #1 at 10:49:05 AM
+38 verbose etag 0c7b0c63e629ae220c1893d55bb00197350a111c
+39 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react
+40 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom
+41 verbose headers { date: 'Wed, 24 May 2017 15:49:05 GMT',
+41 verbose headers   server: 'Artifactory/4.15.0',
+41 verbose headers   connection: 'close' }
+42 silly get cb [ 304,
+42 silly get   { date: 'Wed, 24 May 2017 15:49:05 GMT',
+42 silly get     server: 'Artifactory/4.15.0',
+42 silly get     connection: 'close' } ]
+43 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom from cache
+44 verbose get saving react-dom to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\react-dom\.cache.json
+45 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react
+46 verbose headers { date: 'Wed, 24 May 2017 15:49:05 GMT',
+46 verbose headers   server: 'Artifactory/4.15.0',
+46 verbose headers   connection: 'close' }
+47 silly get cb [ 304,
+47 silly get   { date: 'Wed, 24 May 2017 15:49:05 GMT',
+47 silly get     server: 'Artifactory/4.15.0',
+47 silly get     connection: 'close' } ]
+48 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react from cache
+49 verbose get saving react to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\react\.cache.json
+50 silly resolveWithNewModule react@15.5.4 checking installable status
+51 silly cache add args [ 'react@^15.3.0', null ]
+52 verbose cache add spec react@^15.3.0
+53 silly cache add parsed spec Result {
+53 silly cache add   raw: 'react@^15.3.0',
+53 silly cache add   scope: null,
+53 silly cache add   name: 'react',
+53 silly cache add   rawSpec: '^15.3.0',
+53 silly cache add   spec: '>=15.3.0 <16.0.0',
+53 silly cache add   type: 'range' }
+54 silly addNamed react@>=15.3.0 <16.0.0
+55 verbose addNamed ">=15.3.0 <16.0.0" is a valid semver range for react
+56 silly addNameRange { name: 'react', range: '>=15.3.0 <16.0.0', hasData: false }
+57 silly mapToRegistry name react
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+60 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react
+61 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react not in flight; fetching
+62 silly resolveWithNewModule react-dom@15.5.4 checking installable status
+63 silly cache add args [ 'react-dom@^15.3.0', null ]
+64 verbose cache add spec react-dom@^15.3.0
+65 silly cache add parsed spec Result {
+65 silly cache add   raw: 'react-dom@^15.3.0',
+65 silly cache add   scope: null,
+65 silly cache add   name: 'react-dom',
+65 silly cache add   rawSpec: '^15.3.0',
+65 silly cache add   spec: '>=15.3.0 <16.0.0',
+65 silly cache add   type: 'range' }
+66 silly addNamed react-dom@>=15.3.0 <16.0.0
+67 verbose addNamed ">=15.3.0 <16.0.0" is a valid semver range for react-dom
+68 silly addNameRange { name: 'react-dom', range: '>=15.3.0 <16.0.0', hasData: false }
+69 silly mapToRegistry name react-dom
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+72 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom
+73 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom not in flight; fetching
+74 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react not expired, no request
+75 silly addNameRange number 2 { name: 'react', range: '>=15.3.0 <16.0.0', hasData: true }
+76 silly addNameRange versions [ 'react',
+76 silly addNameRange   [ '15.4.2',
+76 silly addNameRange     '0.14.3',
+76 silly addNameRange     '0.13.3',
+76 silly addNameRange     '15.3.2',
+76 silly addNameRange     '0.14.0',
+76 silly addNameRange     '0.14.0-beta3',
+76 silly addNameRange     '15.0.2',
+76 silly addNameRange     '0.14.8',
+76 silly addNameRange     '0.14.0-rc1',
+76 silly addNameRange     '15.5.4' ] ]
+77 silly addNamed react@15.5.4
+78 verbose addNamed "15.5.4" is a plain semver version for react
+79 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-dom not expired, no request
+80 silly addNameRange number 2 { name: 'react-dom', range: '>=15.3.0 <16.0.0', hasData: true }
+81 silly addNameRange versions [ 'react-dom',
+81 silly addNameRange   [ '15.4.2',
+81 silly addNameRange     '0.14.3',
+81 silly addNameRange     '15.3.2',
+81 silly addNameRange     '0.14.0',
+81 silly addNameRange     '0.14.0-beta3',
+81 silly addNameRange     '15.0.2',
+81 silly addNameRange     '0.14.8',
+81 silly addNameRange     '15.5.4' ] ]
+82 silly addNamed react-dom@15.5.4
+83 verbose addNamed "15.5.4" is a plain semver version for react-dom
+84 silly cache afterAdd react@15.5.4
+85 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\react\15.5.4\package\package.json not in flight; writing
+86 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\react\15.5.4\package\package.json written
+87 silly cache afterAdd react-dom@15.5.4
+88 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\react-dom\15.5.4\package\package.json not in flight; writing
+89 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\react-dom\15.5.4\package\package.json written
+90 silly fetchNamedPackageData fbjs
+91 silly mapToRegistry name fbjs
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+94 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs
+95 silly fetchNamedPackageData loose-envify
+96 silly mapToRegistry name loose-envify
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+99 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify
+100 silly fetchNamedPackageData object-assign
+101 silly mapToRegistry name object-assign
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+104 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign
+105 silly fetchNamedPackageData prop-types
+106 silly mapToRegistry name prop-types
+107 silly mapToRegistry using default registry
+108 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+109 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types
+110 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify
+111 verbose request always-auth set; sending authorization
+112 info attempt registry request try #1 at 10:49:06 AM
+113 verbose etag 9a9b0551469380ca38b9360bede1d9e2a3d4674e
+114 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify
+115 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign
+116 verbose request always-auth set; sending authorization
+117 info attempt registry request try #1 at 10:49:06 AM
+118 verbose etag f9aea9e3a62b129ab300dc64ebf0463d11dfb2f2
+119 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign
+120 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types
+121 verbose request always-auth set; sending authorization
+122 info attempt registry request try #1 at 10:49:06 AM
+123 verbose etag 7e89900ebbcafe2f735f62edecd7ed58296ef459
+124 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types
+125 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs
+126 verbose request always-auth set; sending authorization
+127 info attempt registry request try #1 at 10:49:06 AM
+128 verbose etag 9023b048f9d9f5a4223ead7bf6483ab6f29cec07
+129 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs
+130 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types
+131 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+131 verbose headers   server: 'Artifactory/4.15.0',
+131 verbose headers   connection: 'close' }
+132 silly get cb [ 304,
+132 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+132 silly get     server: 'Artifactory/4.15.0',
+132 silly get     connection: 'close' } ]
+133 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types from cache
+134 verbose get saving prop-types to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\prop-types\.cache.json
+135 silly resolveWithNewModule prop-types@15.5.10 checking installable status
+136 silly cache add args [ 'prop-types@^15.5.7', null ]
+137 verbose cache add spec prop-types@^15.5.7
+138 silly cache add parsed spec Result {
+138 silly cache add   raw: 'prop-types@^15.5.7',
+138 silly cache add   scope: null,
+138 silly cache add   name: 'prop-types',
+138 silly cache add   rawSpec: '^15.5.7',
+138 silly cache add   spec: '>=15.5.7 <16.0.0',
+138 silly cache add   type: 'range' }
+139 silly addNamed prop-types@>=15.5.7 <16.0.0
+140 verbose addNamed ">=15.5.7 <16.0.0" is a valid semver range for prop-types
+141 silly addNameRange { name: 'prop-types', range: '>=15.5.7 <16.0.0', hasData: false }
+142 silly mapToRegistry name prop-types
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+145 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types
+146 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types not in flight; fetching
+147 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/prop-types not expired, no request
+148 silly addNameRange number 2 { name: 'prop-types', range: '>=15.5.7 <16.0.0', hasData: true }
+149 silly addNameRange versions [ 'prop-types', [ '15.5.10', '15.5.8' ] ]
+150 silly addNamed prop-types@15.5.10
+151 verbose addNamed "15.5.10" is a plain semver version for prop-types
+152 silly cache afterAdd prop-types@15.5.10
+153 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\prop-types\15.5.10\package\package.json not in flight; writing
+154 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\prop-types\15.5.10\package\package.json written
+155 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify
+156 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+156 verbose headers   server: 'Artifactory/4.15.0',
+156 verbose headers   connection: 'close' }
+157 silly get cb [ 304,
+157 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+157 silly get     server: 'Artifactory/4.15.0',
+157 silly get     connection: 'close' } ]
+158 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify from cache
+159 verbose get saving loose-envify to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\loose-envify\.cache.json
+160 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign
+161 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+161 verbose headers   server: 'Artifactory/4.15.0',
+161 verbose headers   connection: 'close' }
+162 silly get cb [ 304,
+162 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+162 silly get     server: 'Artifactory/4.15.0',
+162 silly get     connection: 'close' } ]
+163 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign from cache
+164 verbose get saving object-assign to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\object-assign\.cache.json
+165 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs
+166 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+166 verbose headers   server: 'Artifactory/4.15.0',
+166 verbose headers   connection: 'close' }
+167 silly get cb [ 304,
+167 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+167 silly get     server: 'Artifactory/4.15.0',
+167 silly get     connection: 'close' } ]
+168 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs from cache
+169 verbose get saving fbjs to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\fbjs\.cache.json
+170 silly resolveWithNewModule loose-envify@1.3.1 checking installable status
+171 silly cache add args [ 'loose-envify@^1.1.0', null ]
+172 verbose cache add spec loose-envify@^1.1.0
+173 silly cache add parsed spec Result {
+173 silly cache add   raw: 'loose-envify@^1.1.0',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'loose-envify',
+173 silly cache add   rawSpec: '^1.1.0',
+173 silly cache add   spec: '>=1.1.0 <2.0.0',
+173 silly cache add   type: 'range' }
+174 silly addNamed loose-envify@>=1.1.0 <2.0.0
+175 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for loose-envify
+176 silly addNameRange { name: 'loose-envify', range: '>=1.1.0 <2.0.0', hasData: false }
+177 silly mapToRegistry name loose-envify
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+180 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify
+181 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify not in flight; fetching
+182 silly resolveWithNewModule object-assign@4.1.1 checking installable status
+183 silly cache add args [ 'object-assign@^4.1.0', null ]
+184 verbose cache add spec object-assign@^4.1.0
+185 silly cache add parsed spec Result {
+185 silly cache add   raw: 'object-assign@^4.1.0',
+185 silly cache add   scope: null,
+185 silly cache add   name: 'object-assign',
+185 silly cache add   rawSpec: '^4.1.0',
+185 silly cache add   spec: '>=4.1.0 <5.0.0',
+185 silly cache add   type: 'range' }
+186 silly addNamed object-assign@>=4.1.0 <5.0.0
+187 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for object-assign
+188 silly addNameRange { name: 'object-assign',
+188 silly addNameRange   range: '>=4.1.0 <5.0.0',
+188 silly addNameRange   hasData: false }
+189 silly mapToRegistry name object-assign
+190 silly mapToRegistry using default registry
+191 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+192 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign
+193 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign not in flight; fetching
+194 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/loose-envify not expired, no request
+195 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.1.0 <2.0.0', hasData: true }
+196 silly addNameRange versions [ 'loose-envify',
+196 silly addNameRange   [ '1.3.0', '1.3.1', '1.0.0', '1.1.0', '1.2.0' ] ]
+197 silly addNamed loose-envify@1.3.1
+198 verbose addNamed "1.3.1" is a plain semver version for loose-envify
+199 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/object-assign not expired, no request
+200 silly addNameRange number 2 { name: 'object-assign', range: '>=4.1.0 <5.0.0', hasData: true }
+201 silly addNameRange versions [ 'object-assign',
+201 silly addNameRange   [ '0.3.1', '3.0.0', '4.1.1', '4.1.0', '4.0.1', '1.0.0', '2.1.1' ] ]
+202 silly addNamed object-assign@4.1.1
+203 verbose addNamed "4.1.1" is a plain semver version for object-assign
+204 silly resolveWithNewModule fbjs@0.8.12 checking installable status
+205 silly cache add args [ 'fbjs@^0.8.9', null ]
+206 verbose cache add spec fbjs@^0.8.9
+207 silly cache add parsed spec Result {
+207 silly cache add   raw: 'fbjs@^0.8.9',
+207 silly cache add   scope: null,
+207 silly cache add   name: 'fbjs',
+207 silly cache add   rawSpec: '^0.8.9',
+207 silly cache add   spec: '>=0.8.9 <0.9.0',
+207 silly cache add   type: 'range' }
+208 silly addNamed fbjs@>=0.8.9 <0.9.0
+209 verbose addNamed ">=0.8.9 <0.9.0" is a valid semver range for fbjs
+210 silly addNameRange { name: 'fbjs', range: '>=0.8.9 <0.9.0', hasData: false }
+211 silly mapToRegistry name fbjs
+212 silly mapToRegistry using default registry
+213 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+214 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs
+215 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs not in flight; fetching
+216 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/fbjs not expired, no request
+217 silly addNameRange number 2 { name: 'fbjs', range: '>=0.8.9 <0.9.0', hasData: true }
+218 silly addNameRange versions [ 'fbjs',
+218 silly addNameRange   [ '0.6.1',
+218 silly addNameRange     '0.3.2',
+218 silly addNameRange     '0.8.3',
+218 silly addNameRange     '0.1.0-alpha.10',
+218 silly addNameRange     '0.8.4',
+218 silly addNameRange     '0.8.5',
+218 silly addNameRange     '0.2.1',
+218 silly addNameRange     '0.1.0-alpha.4',
+218 silly addNameRange     '0.8.12' ] ]
+219 silly addNamed fbjs@0.8.12
+220 verbose addNamed "0.8.12" is a plain semver version for fbjs
+221 silly cache afterAdd object-assign@4.1.1
+222 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\object-assign\4.1.1\package\package.json not in flight; writing
+223 silly cache afterAdd fbjs@0.8.12
+224 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\fbjs\0.8.12\package\package.json not in flight; writing
+225 silly cache afterAdd loose-envify@1.3.1
+226 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\loose-envify\1.3.1\package\package.json not in flight; writing
+227 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\object-assign\4.1.1\package\package.json written
+228 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\fbjs\0.8.12\package\package.json written
+229 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\loose-envify\1.3.1\package\package.json written
+230 silly fetchNamedPackageData core-js
+231 silly mapToRegistry name core-js
+232 silly mapToRegistry using default registry
+233 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+234 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js
+235 silly fetchNamedPackageData isomorphic-fetch
+236 silly mapToRegistry name isomorphic-fetch
+237 silly mapToRegistry using default registry
+238 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+239 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch
+240 silly fetchNamedPackageData promise
+241 silly mapToRegistry name promise
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+244 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise
+245 silly fetchNamedPackageData setimmediate
+246 silly mapToRegistry name setimmediate
+247 silly mapToRegistry using default registry
+248 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+249 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate
+250 silly fetchNamedPackageData ua-parser-js
+251 silly mapToRegistry name ua-parser-js
+252 silly mapToRegistry using default registry
+253 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+254 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js
+255 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js
+256 verbose request always-auth set; sending authorization
+257 info attempt registry request try #1 at 10:49:06 AM
+258 verbose etag 5dd865fe49bd62cd71eba8131900ffd222abdd13
+259 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js
+260 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch
+261 verbose request always-auth set; sending authorization
+262 info attempt registry request try #1 at 10:49:06 AM
+263 verbose etag 6dc505476e960ac67ce3d526f34d116106f33ec4
+264 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch
+265 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise
+266 verbose request always-auth set; sending authorization
+267 info attempt registry request try #1 at 10:49:06 AM
+268 verbose etag 8778410b323e4896e8216fd76751b0a047657e04
+269 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise
+270 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate
+271 verbose request always-auth set; sending authorization
+272 info attempt registry request try #1 at 10:49:06 AM
+273 verbose etag 3c111ee77c085704b713f1333cfa29500e039137
+274 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate
+275 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js
+276 verbose request always-auth set; sending authorization
+277 info attempt registry request try #1 at 10:49:06 AM
+278 verbose etag 22a66bf67104f95faf1ab0275410a8389284e29b
+279 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js
+280 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch
+281 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+281 verbose headers   server: 'Artifactory/4.15.0',
+281 verbose headers   connection: 'close' }
+282 silly get cb [ 304,
+282 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+282 silly get     server: 'Artifactory/4.15.0',
+282 silly get     connection: 'close' } ]
+283 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch from cache
+284 verbose get saving isomorphic-fetch to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\isomorphic-fetch\.cache.json
+285 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js
+286 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+286 verbose headers   server: 'Artifactory/4.15.0',
+286 verbose headers   connection: 'close' }
+287 silly get cb [ 304,
+287 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+287 silly get     server: 'Artifactory/4.15.0',
+287 silly get     connection: 'close' } ]
+288 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js from cache
+289 verbose get saving ua-parser-js to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\ua-parser-js\.cache.json
+290 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise
+291 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+291 verbose headers   server: 'Artifactory/4.15.0',
+291 verbose headers   connection: 'close' }
+292 silly get cb [ 304,
+292 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+292 silly get     server: 'Artifactory/4.15.0',
+292 silly get     connection: 'close' } ]
+293 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise from cache
+294 verbose get saving promise to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\promise\.cache.json
+295 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate
+296 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+296 verbose headers   server: 'Artifactory/4.15.0',
+296 verbose headers   connection: 'close' }
+297 silly get cb [ 304,
+297 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+297 silly get     server: 'Artifactory/4.15.0',
+297 silly get     connection: 'close' } ]
+298 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate from cache
+299 verbose get saving setimmediate to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\setimmediate\.cache.json
+300 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js
+301 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+301 verbose headers   server: 'Artifactory/4.15.0',
+301 verbose headers   connection: 'close' }
+302 silly get cb [ 304,
+302 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+302 silly get     server: 'Artifactory/4.15.0',
+302 silly get     connection: 'close' } ]
+303 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js from cache
+304 verbose get saving core-js to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\core-js\.cache.json
+305 silly resolveWithNewModule ua-parser-js@0.7.12 checking installable status
+306 silly cache add args [ 'ua-parser-js@^0.7.9', null ]
+307 verbose cache add spec ua-parser-js@^0.7.9
+308 silly cache add parsed spec Result {
+308 silly cache add   raw: 'ua-parser-js@^0.7.9',
+308 silly cache add   scope: null,
+308 silly cache add   name: 'ua-parser-js',
+308 silly cache add   rawSpec: '^0.7.9',
+308 silly cache add   spec: '>=0.7.9 <0.8.0',
+308 silly cache add   type: 'range' }
+309 silly addNamed ua-parser-js@>=0.7.9 <0.8.0
+310 verbose addNamed ">=0.7.9 <0.8.0" is a valid semver range for ua-parser-js
+311 silly addNameRange { name: 'ua-parser-js', range: '>=0.7.9 <0.8.0', hasData: false }
+312 silly mapToRegistry name ua-parser-js
+313 silly mapToRegistry using default registry
+314 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+315 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js
+316 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js not in flight; fetching
+317 silly resolveWithNewModule promise@7.1.1 checking installable status
+318 silly cache add args [ 'promise@^7.1.1', null ]
+319 verbose cache add spec promise@^7.1.1
+320 silly cache add parsed spec Result {
+320 silly cache add   raw: 'promise@^7.1.1',
+320 silly cache add   scope: null,
+320 silly cache add   name: 'promise',
+320 silly cache add   rawSpec: '^7.1.1',
+320 silly cache add   spec: '>=7.1.1 <8.0.0',
+320 silly cache add   type: 'range' }
+321 silly addNamed promise@>=7.1.1 <8.0.0
+322 verbose addNamed ">=7.1.1 <8.0.0" is a valid semver range for promise
+323 silly addNameRange { name: 'promise', range: '>=7.1.1 <8.0.0', hasData: false }
+324 silly mapToRegistry name promise
+325 silly mapToRegistry using default registry
+326 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+327 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise
+328 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise not in flight; fetching
+329 silly resolveWithNewModule setimmediate@1.0.5 checking installable status
+330 silly cache add args [ 'setimmediate@^1.0.5', null ]
+331 verbose cache add spec setimmediate@^1.0.5
+332 silly cache add parsed spec Result {
+332 silly cache add   raw: 'setimmediate@^1.0.5',
+332 silly cache add   scope: null,
+332 silly cache add   name: 'setimmediate',
+332 silly cache add   rawSpec: '^1.0.5',
+332 silly cache add   spec: '>=1.0.5 <2.0.0',
+332 silly cache add   type: 'range' }
+333 silly addNamed setimmediate@>=1.0.5 <2.0.0
+334 verbose addNamed ">=1.0.5 <2.0.0" is a valid semver range for setimmediate
+335 silly addNameRange { name: 'setimmediate', range: '>=1.0.5 <2.0.0', hasData: false }
+336 silly mapToRegistry name setimmediate
+337 silly mapToRegistry using default registry
+338 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+339 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate
+340 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate not in flight; fetching
+341 silly resolveWithNewModule isomorphic-fetch@2.2.1 checking installable status
+342 silly cache add args [ 'isomorphic-fetch@^2.1.1', null ]
+343 verbose cache add spec isomorphic-fetch@^2.1.1
+344 silly cache add parsed spec Result {
+344 silly cache add   raw: 'isomorphic-fetch@^2.1.1',
+344 silly cache add   scope: null,
+344 silly cache add   name: 'isomorphic-fetch',
+344 silly cache add   rawSpec: '^2.1.1',
+344 silly cache add   spec: '>=2.1.1 <3.0.0',
+344 silly cache add   type: 'range' }
+345 silly addNamed isomorphic-fetch@>=2.1.1 <3.0.0
+346 verbose addNamed ">=2.1.1 <3.0.0" is a valid semver range for isomorphic-fetch
+347 silly addNameRange { name: 'isomorphic-fetch',
+347 silly addNameRange   range: '>=2.1.1 <3.0.0',
+347 silly addNameRange   hasData: false }
+348 silly mapToRegistry name isomorphic-fetch
+349 silly mapToRegistry using default registry
+350 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+351 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch
+352 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch not in flight; fetching
+353 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/ua-parser-js not expired, no request
+354 silly addNameRange number 2 { name: 'ua-parser-js', range: '>=0.7.9 <0.8.0', hasData: true }
+355 silly addNameRange versions [ 'ua-parser-js', [ '0.7.12', '0.7.10', '0.7.9' ] ]
+356 silly addNamed ua-parser-js@0.7.12
+357 verbose addNamed "0.7.12" is a plain semver version for ua-parser-js
+358 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/promise not expired, no request
+359 silly addNameRange number 2 { name: 'promise', range: '>=7.1.1 <8.0.0', hasData: true }
+360 silly addNameRange versions [ 'promise', [ '2.0.0', '7.1.1', '7.0.4', '6.0.0', '6.1.0' ] ]
+361 silly addNamed promise@7.1.1
+362 verbose addNamed "7.1.1" is a plain semver version for promise
+363 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/setimmediate not expired, no request
+364 silly addNameRange number 2 { name: 'setimmediate', range: '>=1.0.5 <2.0.0', hasData: true }
+365 silly addNameRange versions [ 'setimmediate', [ '1.0.4', '1.0.5', '1.0.1', '1.0.2' ] ]
+366 silly addNamed setimmediate@1.0.5
+367 verbose addNamed "1.0.5" is a plain semver version for setimmediate
+368 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/isomorphic-fetch not expired, no request
+369 silly addNameRange number 2 { name: 'isomorphic-fetch',
+369 silly addNameRange   range: '>=2.1.1 <3.0.0',
+369 silly addNameRange   hasData: true }
+370 silly addNameRange versions [ 'isomorphic-fetch', [ '2.2.1' ] ]
+371 silly addNamed isomorphic-fetch@2.2.1
+372 verbose addNamed "2.2.1" is a plain semver version for isomorphic-fetch
+373 silly resolveWithNewModule core-js@1.2.7 checking installable status
+374 silly cache add args [ 'core-js@^1.0.0', null ]
+375 verbose cache add spec core-js@^1.0.0
+376 silly cache add parsed spec Result {
+376 silly cache add   raw: 'core-js@^1.0.0',
+376 silly cache add   scope: null,
+376 silly cache add   name: 'core-js',
+376 silly cache add   rawSpec: '^1.0.0',
+376 silly cache add   spec: '>=1.0.0 <2.0.0',
+376 silly cache add   type: 'range' }
+377 silly addNamed core-js@>=1.0.0 <2.0.0
+378 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for core-js
+379 silly addNameRange { name: 'core-js', range: '>=1.0.0 <2.0.0', hasData: false }
+380 silly mapToRegistry name core-js
+381 silly mapToRegistry using default registry
+382 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+383 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js
+384 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js not in flight; fetching
+385 silly cache afterAdd ua-parser-js@0.7.12
+386 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\ua-parser-js\0.7.12\package\package.json not in flight; writing
+387 silly cache afterAdd promise@7.1.1
+388 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\promise\7.1.1\package\package.json not in flight; writing
+389 silly cache afterAdd isomorphic-fetch@2.2.1
+390 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\isomorphic-fetch\2.2.1\package\package.json not in flight; writing
+391 silly cache afterAdd setimmediate@1.0.5
+392 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\setimmediate\1.0.5\package\package.json not in flight; writing
+393 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/core-js not expired, no request
+394 silly addNameRange number 2 { name: 'core-js', range: '>=1.0.0 <2.0.0', hasData: true }
+395 silly addNameRange versions [ 'core-js',
+395 silly addNameRange   [ '2.4.0',
+395 silly addNameRange     '2.2.2',
+395 silly addNameRange     '2.4.1',
+395 silly addNameRange     '2.0.3',
+395 silly addNameRange     '1.2.1',
+395 silly addNameRange     '1.1.3',
+395 silly addNameRange     '0.9.18',
+395 silly addNameRange     '1.2.3',
+395 silly addNameRange     '1.1.4',
+395 silly addNameRange     '1.2.6',
+395 silly addNameRange     '1.2.7',
+395 silly addNameRange     '0.8.4',
+395 silly addNameRange     '1.2.0' ] ]
+396 silly addNamed core-js@1.2.7
+397 verbose addNamed "1.2.7" is a plain semver version for core-js
+398 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\ua-parser-js\0.7.12\package\package.json written
+399 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\promise\7.1.1\package\package.json written
+400 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\isomorphic-fetch\2.2.1\package\package.json written
+401 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\setimmediate\1.0.5\package\package.json written
+402 silly cache afterAdd core-js@1.2.7
+403 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\core-js\1.2.7\package\package.json not in flight; writing
+404 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\core-js\1.2.7\package\package.json written
+405 silly fetchNamedPackageData node-fetch
+406 silly mapToRegistry name node-fetch
+407 silly mapToRegistry using default registry
+408 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+409 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch
+410 silly fetchNamedPackageData whatwg-fetch
+411 silly mapToRegistry name whatwg-fetch
+412 silly mapToRegistry using default registry
+413 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+414 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch
+415 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch
+416 verbose request always-auth set; sending authorization
+417 info attempt registry request try #1 at 10:49:07 AM
+418 verbose etag 43d2f8908e4e8a63fb4948f2d61baa12c6f8c7a4
+419 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch
+420 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch
+421 verbose request always-auth set; sending authorization
+422 info attempt registry request try #1 at 10:49:07 AM
+423 verbose etag 03ed435907fd2fdedbb6cf83705eeb45f1f97a3e
+424 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch
+425 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch
+426 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+426 verbose headers   server: 'Artifactory/4.15.0',
+426 verbose headers   connection: 'close' }
+427 silly get cb [ 304,
+427 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+427 silly get     server: 'Artifactory/4.15.0',
+427 silly get     connection: 'close' } ]
+428 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch from cache
+429 verbose get saving node-fetch to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\node-fetch\.cache.json
+430 silly resolveWithNewModule node-fetch@1.6.3 checking installable status
+431 silly cache add args [ 'node-fetch@^1.0.1', null ]
+432 verbose cache add spec node-fetch@^1.0.1
+433 silly cache add parsed spec Result {
+433 silly cache add   raw: 'node-fetch@^1.0.1',
+433 silly cache add   scope: null,
+433 silly cache add   name: 'node-fetch',
+433 silly cache add   rawSpec: '^1.0.1',
+433 silly cache add   spec: '>=1.0.1 <2.0.0',
+433 silly cache add   type: 'range' }
+434 silly addNamed node-fetch@>=1.0.1 <2.0.0
+435 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for node-fetch
+436 silly addNameRange { name: 'node-fetch', range: '>=1.0.1 <2.0.0', hasData: false }
+437 silly mapToRegistry name node-fetch
+438 silly mapToRegistry using default registry
+439 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+440 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch
+441 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch not in flight; fetching
+442 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/node-fetch not expired, no request
+443 silly addNameRange number 2 { name: 'node-fetch', range: '>=1.0.1 <2.0.0', hasData: true }
+444 silly addNameRange versions [ 'node-fetch', [ '1.6.0', '1.6.3' ] ]
+445 silly addNamed node-fetch@1.6.3
+446 verbose addNamed "1.6.3" is a plain semver version for node-fetch
+447 silly cache afterAdd node-fetch@1.6.3
+448 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\node-fetch\1.6.3\package\package.json not in flight; writing
+449 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\node-fetch\1.6.3\package\package.json written
+450 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch
+451 verbose headers { date: 'Wed, 24 May 2017 15:49:06 GMT',
+451 verbose headers   server: 'Artifactory/4.15.0',
+451 verbose headers   connection: 'close' }
+452 silly get cb [ 304,
+452 silly get   { date: 'Wed, 24 May 2017 15:49:06 GMT',
+452 silly get     server: 'Artifactory/4.15.0',
+452 silly get     connection: 'close' } ]
+453 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch from cache
+454 verbose get saving whatwg-fetch to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\whatwg-fetch\.cache.json
+455 silly resolveWithNewModule whatwg-fetch@2.0.3 checking installable status
+456 silly cache add args [ 'whatwg-fetch@>=0.10.0', null ]
+457 verbose cache add spec whatwg-fetch@>=0.10.0
+458 silly cache add parsed spec Result {
+458 silly cache add   raw: 'whatwg-fetch@>=0.10.0',
+458 silly cache add   scope: null,
+458 silly cache add   name: 'whatwg-fetch',
+458 silly cache add   rawSpec: '>=0.10.0',
+458 silly cache add   spec: '>=0.10.0',
+458 silly cache add   type: 'range' }
+459 silly addNamed whatwg-fetch@>=0.10.0
+460 verbose addNamed ">=0.10.0" is a valid semver range for whatwg-fetch
+461 silly addNameRange { name: 'whatwg-fetch', range: '>=0.10.0', hasData: false }
+462 silly mapToRegistry name whatwg-fetch
+463 silly mapToRegistry using default registry
+464 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+465 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch
+466 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch not in flight; fetching
+467 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/whatwg-fetch not expired, no request
+468 silly addNameRange number 2 { name: 'whatwg-fetch', range: '>=0.10.0', hasData: true }
+469 silly addNameRange versions [ 'whatwg-fetch', [ '0.11.1', '0.9.0', '1.0.0', '2.0.3' ] ]
+470 silly addNamed whatwg-fetch@2.0.3
+471 verbose addNamed "2.0.3" is a plain semver version for whatwg-fetch
+472 silly cache afterAdd whatwg-fetch@2.0.3
+473 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\whatwg-fetch\2.0.3\package\package.json not in flight; writing
+474 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\whatwg-fetch\2.0.3\package\package.json written
+475 silly fetchNamedPackageData encoding
+476 silly mapToRegistry name encoding
+477 silly mapToRegistry using default registry
+478 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+479 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding
+480 silly fetchNamedPackageData is-stream
+481 silly mapToRegistry name is-stream
+482 silly mapToRegistry using default registry
+483 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+484 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream
+485 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding
+486 verbose request always-auth set; sending authorization
+487 info attempt registry request try #1 at 10:49:07 AM
+488 verbose etag 6af47da0fa3f7d72d866c97c352742776af690e1
+489 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding
+490 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream
+491 verbose request always-auth set; sending authorization
+492 info attempt registry request try #1 at 10:49:07 AM
+493 verbose etag 8d8395da93a64e45fc3fbc9ddcd196538757b97d
+494 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream
+495 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding
+496 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+496 verbose headers   server: 'Artifactory/4.15.0',
+496 verbose headers   connection: 'close' }
+497 silly get cb [ 304,
+497 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+497 silly get     server: 'Artifactory/4.15.0',
+497 silly get     connection: 'close' } ]
+498 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding from cache
+499 verbose get saving encoding to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\encoding\.cache.json
+500 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream
+501 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+501 verbose headers   server: 'Artifactory/4.15.0',
+501 verbose headers   connection: 'close' }
+502 silly get cb [ 304,
+502 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+502 silly get     server: 'Artifactory/4.15.0',
+502 silly get     connection: 'close' } ]
+503 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream from cache
+504 verbose get saving is-stream to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\is-stream\.cache.json
+505 silly resolveWithNewModule encoding@0.1.12 checking installable status
+506 silly cache add args [ 'encoding@^0.1.11', null ]
+507 verbose cache add spec encoding@^0.1.11
+508 silly cache add parsed spec Result {
+508 silly cache add   raw: 'encoding@^0.1.11',
+508 silly cache add   scope: null,
+508 silly cache add   name: 'encoding',
+508 silly cache add   rawSpec: '^0.1.11',
+508 silly cache add   spec: '>=0.1.11 <0.2.0',
+508 silly cache add   type: 'range' }
+509 silly addNamed encoding@>=0.1.11 <0.2.0
+510 verbose addNamed ">=0.1.11 <0.2.0" is a valid semver range for encoding
+511 silly addNameRange { name: 'encoding', range: '>=0.1.11 <0.2.0', hasData: false }
+512 silly mapToRegistry name encoding
+513 silly mapToRegistry using default registry
+514 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+515 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding
+516 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding not in flight; fetching
+517 silly resolveWithNewModule is-stream@1.1.0 checking installable status
+518 silly cache add args [ 'is-stream@^1.0.1', null ]
+519 verbose cache add spec is-stream@^1.0.1
+520 silly cache add parsed spec Result {
+520 silly cache add   raw: 'is-stream@^1.0.1',
+520 silly cache add   scope: null,
+520 silly cache add   name: 'is-stream',
+520 silly cache add   rawSpec: '^1.0.1',
+520 silly cache add   spec: '>=1.0.1 <2.0.0',
+520 silly cache add   type: 'range' }
+521 silly addNamed is-stream@>=1.0.1 <2.0.0
+522 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for is-stream
+523 silly addNameRange { name: 'is-stream', range: '>=1.0.1 <2.0.0', hasData: false }
+524 silly mapToRegistry name is-stream
+525 silly mapToRegistry using default registry
+526 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+527 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream
+528 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream not in flight; fetching
+529 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/encoding not expired, no request
+530 silly addNameRange number 2 { name: 'encoding', range: '>=0.1.11 <0.2.0', hasData: true }
+531 silly addNameRange versions [ 'encoding', [ '0.1.12' ] ]
+532 silly addNamed encoding@0.1.12
+533 verbose addNamed "0.1.12" is a plain semver version for encoding
+534 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/is-stream not expired, no request
+535 silly addNameRange number 2 { name: 'is-stream', range: '>=1.0.1 <2.0.0', hasData: true }
+536 silly addNameRange versions [ 'is-stream', [ '1.1.0', '1.0.1' ] ]
+537 silly addNamed is-stream@1.1.0
+538 verbose addNamed "1.1.0" is a plain semver version for is-stream
+539 silly cache afterAdd encoding@0.1.12
+540 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\encoding\0.1.12\package\package.json not in flight; writing
+541 silly cache afterAdd is-stream@1.1.0
+542 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\is-stream\1.1.0\package\package.json not in flight; writing
+543 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\is-stream\1.1.0\package\package.json written
+544 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\encoding\0.1.12\package\package.json written
+545 silly fetchNamedPackageData iconv-lite
+546 silly mapToRegistry name iconv-lite
+547 silly mapToRegistry using default registry
+548 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+549 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite
+550 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite
+551 verbose request always-auth set; sending authorization
+552 info attempt registry request try #1 at 10:49:07 AM
+553 verbose etag bd7f5aca389a836ac655e9933c70ce03f68f025d
+554 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite
+555 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite
+556 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+556 verbose headers   server: 'Artifactory/4.15.0',
+556 verbose headers   connection: 'close' }
+557 silly get cb [ 304,
+557 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+557 silly get     server: 'Artifactory/4.15.0',
+557 silly get     connection: 'close' } ]
+558 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite from cache
+559 verbose get saving iconv-lite to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\iconv-lite\.cache.json
+560 silly resolveWithNewModule iconv-lite@0.4.17 checking installable status
+561 silly cache add args [ 'iconv-lite@~0.4.13', null ]
+562 verbose cache add spec iconv-lite@~0.4.13
+563 silly cache add parsed spec Result {
+563 silly cache add   raw: 'iconv-lite@~0.4.13',
+563 silly cache add   scope: null,
+563 silly cache add   name: 'iconv-lite',
+563 silly cache add   rawSpec: '~0.4.13',
+563 silly cache add   spec: '>=0.4.13 <0.5.0',
+563 silly cache add   type: 'range' }
+564 silly addNamed iconv-lite@>=0.4.13 <0.5.0
+565 verbose addNamed ">=0.4.13 <0.5.0" is a valid semver range for iconv-lite
+566 silly addNameRange { name: 'iconv-lite', range: '>=0.4.13 <0.5.0', hasData: false }
+567 silly mapToRegistry name iconv-lite
+568 silly mapToRegistry using default registry
+569 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+570 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite
+571 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite not in flight; fetching
+572 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/iconv-lite not expired, no request
+573 silly addNameRange number 2 { name: 'iconv-lite', range: '>=0.4.13 <0.5.0', hasData: true }
+574 silly addNameRange versions [ 'iconv-lite',
+574 silly addNameRange   [ '0.4.12',
+574 silly addNameRange     '0.4.11',
+574 silly addNameRange     '0.2.11',
+574 silly addNameRange     '0.4.13',
+574 silly addNameRange     '0.4.16',
+574 silly addNameRange     '0.4.15',
+574 silly addNameRange     '0.4.4',
+574 silly addNameRange     '0.4.17',
+574 silly addNameRange     '0.4.8' ] ]
+575 silly addNamed iconv-lite@0.4.17
+576 verbose addNamed "0.4.17" is a plain semver version for iconv-lite
+577 silly cache afterAdd iconv-lite@0.4.17
+578 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\iconv-lite\0.4.17\package\package.json not in flight; writing
+579 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\iconv-lite\0.4.17\package\package.json written
+580 silly fetchNamedPackageData js-tokens
+581 silly mapToRegistry name js-tokens
+582 silly mapToRegistry using default registry
+583 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+584 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens
+585 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens
+586 verbose request always-auth set; sending authorization
+587 info attempt registry request try #1 at 10:49:07 AM
+588 verbose etag 3f929adae1b7ff19d1d0a1cec34b168cedc0eaba
+589 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens
+590 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens
+591 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+591 verbose headers   server: 'Artifactory/4.15.0',
+591 verbose headers   connection: 'close' }
+592 silly get cb [ 304,
+592 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+592 silly get     server: 'Artifactory/4.15.0',
+592 silly get     connection: 'close' } ]
+593 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens from cache
+594 verbose get saving js-tokens to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\js-tokens\.cache.json
+595 silly resolveWithNewModule js-tokens@3.0.1 checking installable status
+596 silly cache add args [ 'js-tokens@^3.0.0', null ]
+597 verbose cache add spec js-tokens@^3.0.0
+598 silly cache add parsed spec Result {
+598 silly cache add   raw: 'js-tokens@^3.0.0',
+598 silly cache add   scope: null,
+598 silly cache add   name: 'js-tokens',
+598 silly cache add   rawSpec: '^3.0.0',
+598 silly cache add   spec: '>=3.0.0 <4.0.0',
+598 silly cache add   type: 'range' }
+599 silly addNamed js-tokens@>=3.0.0 <4.0.0
+600 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for js-tokens
+601 silly addNameRange { name: 'js-tokens', range: '>=3.0.0 <4.0.0', hasData: false }
+602 silly mapToRegistry name js-tokens
+603 silly mapToRegistry using default registry
+604 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+605 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens
+606 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens not in flight; fetching
+607 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/js-tokens not expired, no request
+608 silly addNameRange number 2 { name: 'js-tokens', range: '>=3.0.0 <4.0.0', hasData: true }
+609 silly addNameRange versions [ 'js-tokens',
+609 silly addNameRange   [ '2.0.0', '1.0.3', '3.0.0', '3.0.1', '1.0.1', '1.0.2' ] ]
+610 silly addNamed js-tokens@3.0.1
+611 verbose addNamed "3.0.1" is a plain semver version for js-tokens
+612 silly cache afterAdd js-tokens@3.0.1
+613 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\js-tokens\3.0.1\package\package.json not in flight; writing
+614 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\js-tokens\3.0.1\package\package.json written
+615 silly fetchNamedPackageData asap
+616 silly mapToRegistry name asap
+617 silly mapToRegistry using default registry
+618 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+619 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap
+620 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap
+621 verbose request always-auth set; sending authorization
+622 info attempt registry request try #1 at 10:49:07 AM
+623 verbose etag b05c4216307901c5fdc3c728939344d09500a2b1
+624 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap
+625 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap
+626 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+626 verbose headers   server: 'Artifactory/4.15.0',
+626 verbose headers   connection: 'close' }
+627 silly get cb [ 304,
+627 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+627 silly get     server: 'Artifactory/4.15.0',
+627 silly get     connection: 'close' } ]
+628 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap from cache
+629 verbose get saving asap to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\asap\.cache.json
+630 silly resolveWithNewModule asap@2.0.5 checking installable status
+631 silly cache add args [ 'asap@~2.0.3', null ]
+632 verbose cache add spec asap@~2.0.3
+633 silly cache add parsed spec Result {
+633 silly cache add   raw: 'asap@~2.0.3',
+633 silly cache add   scope: null,
+633 silly cache add   name: 'asap',
+633 silly cache add   rawSpec: '~2.0.3',
+633 silly cache add   spec: '>=2.0.3 <2.1.0',
+633 silly cache add   type: 'range' }
+634 silly addNamed asap@>=2.0.3 <2.1.0
+635 verbose addNamed ">=2.0.3 <2.1.0" is a valid semver range for asap
+636 silly addNameRange { name: 'asap', range: '>=2.0.3 <2.1.0', hasData: false }
+637 silly mapToRegistry name asap
+638 silly mapToRegistry using default registry
+639 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+640 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap
+641 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap not in flight; fetching
+642 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/asap not expired, no request
+643 silly addNameRange number 2 { name: 'asap', range: '>=2.0.3 <2.1.0', hasData: true }
+644 silly addNameRange versions [ 'asap', [ '2.0.4', '2.0.5', '1.0.0', '2.0.3' ] ]
+645 silly addNamed asap@2.0.5
+646 verbose addNamed "2.0.5" is a plain semver version for asap
+647 silly cache afterAdd asap@2.0.5
+648 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\asap\2.0.5\package\package.json not in flight; writing
+649 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\asap\2.0.5\package\package.json written
+650 silly fetchNamedPackageData babel-core
+651 silly mapToRegistry name babel-core
+652 silly mapToRegistry using default registry
+653 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+654 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core
+655 silly fetchNamedPackageData babel-loader
+656 silly mapToRegistry name babel-loader
+657 silly mapToRegistry using default registry
+658 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+659 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader
+660 silly fetchNamedPackageData babel-preset-es2015
+661 silly mapToRegistry name babel-preset-es2015
+662 silly mapToRegistry using default registry
+663 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+664 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015
+665 silly fetchNamedPackageData babel-preset-react
+666 silly mapToRegistry name babel-preset-react
+667 silly mapToRegistry using default registry
+668 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+669 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react
+670 silly fetchNamedPackageData css-loader
+671 silly mapToRegistry name css-loader
+672 silly mapToRegistry using default registry
+673 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+674 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader
+675 silly fetchNamedPackageData install
+676 silly mapToRegistry name install
+677 silly mapToRegistry using default registry
+678 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+679 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/install
+680 silly fetchNamedPackageData react-hot-loader
+681 silly mapToRegistry name react-hot-loader
+682 silly mapToRegistry using default registry
+683 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+684 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader
+685 silly fetchNamedPackageData style-loader
+686 silly mapToRegistry name style-loader
+687 silly mapToRegistry using default registry
+688 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+689 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader
+690 silly fetchNamedPackageData webpack
+691 silly mapToRegistry name webpack
+692 silly mapToRegistry using default registry
+693 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+694 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack
+695 silly fetchNamedPackageData webpack-dev-server
+696 silly mapToRegistry name webpack-dev-server
+697 silly mapToRegistry using default registry
+698 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+699 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server
+700 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/install
+701 verbose request always-auth set; sending authorization
+702 info attempt registry request try #1 at 10:49:07 AM
+703 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/install
+704 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core
+705 verbose request always-auth set; sending authorization
+706 info attempt registry request try #1 at 10:49:07 AM
+707 verbose etag 789c24f342928d2ab8ba6614e459c4bc1748d9df
+708 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core
+709 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader
+710 verbose request always-auth set; sending authorization
+711 info attempt registry request try #1 at 10:49:07 AM
+712 verbose etag 1b96058c6b6ae094605788322b2d1623df6c0946
+713 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader
+714 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015
+715 verbose request always-auth set; sending authorization
+716 info attempt registry request try #1 at 10:49:07 AM
+717 verbose etag b7b7e1af84abe00ff426a6475d26b91a350b90ba
+718 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015
+719 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader
+720 verbose request always-auth set; sending authorization
+721 info attempt registry request try #1 at 10:49:07 AM
+722 verbose etag f6c5d9d00a80166f7af6059537746e13a3a47136
+723 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader
+724 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader
+725 verbose request always-auth set; sending authorization
+726 info attempt registry request try #1 at 10:49:07 AM
+727 verbose etag c0e21654919c97f546623cb5c6a444180eb6bd75
+728 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader
+729 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader
+730 verbose request always-auth set; sending authorization
+731 info attempt registry request try #1 at 10:49:07 AM
+732 verbose etag 1c0118a63006c2070ace45d485a43e4f20f02a3f
+733 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader
+734 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react
+735 verbose request always-auth set; sending authorization
+736 info attempt registry request try #1 at 10:49:07 AM
+737 verbose etag 52e3ae127735f20e5cbc8428a268fca85d9dc1de
+738 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react
+739 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack
+740 verbose request always-auth set; sending authorization
+741 info attempt registry request try #1 at 10:49:07 AM
+742 verbose etag 2f3db2d90e87261150aecf7320ad822263a6e438
+743 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack
+744 verbose request uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server
+745 verbose request always-auth set; sending authorization
+746 info attempt registry request try #1 at 10:49:07 AM
+747 verbose etag 73caf2ff1413fbc15c69bf0672f4f99a28df8333
+748 http request GET https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server
+749 http 200 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/install
+750 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+750 verbose headers   server: 'Artifactory/4.15.0',
+750 verbose headers   'x-artifactory-id': '192f88bfa1e5a5a8130ab3b4f5ed0c5bf95dcc2f',
+750 verbose headers   'x-artifactory-node-id': 'prodrepo101as1l',
+750 verbose headers   etag: '9f94d9cdcac4c5328619d70ba4a272533d109701',
+750 verbose headers   'content-type': 'application/json',
+750 verbose headers   connection: 'close',
+750 verbose headers   'transfer-encoding': 'chunked' }
+751 silly get cb [ 200,
+751 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+751 silly get     server: 'Artifactory/4.15.0',
+751 silly get     'x-artifactory-id': '192f88bfa1e5a5a8130ab3b4f5ed0c5bf95dcc2f',
+751 silly get     'x-artifactory-node-id': 'prodrepo101as1l',
+751 silly get     etag: '9f94d9cdcac4c5328619d70ba4a272533d109701',
+751 silly get     'content-type': 'application/json',
+751 silly get     connection: 'close',
+751 silly get     'transfer-encoding': 'chunked' } ]
+752 verbose get saving install to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\install\.cache.json
+753 silly fetchPackageMetaData Error: No compatible version found: install@^0.8.4
+753 silly fetchPackageMetaData Valid install targets:
+753 silly fetchPackageMetaData 0.1.8
+753 silly fetchPackageMetaData
+753 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:156:16)
+753 silly fetchPackageMetaData     at C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
+753 silly fetchPackageMetaData     at C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\lib\utils\pulse-till-done.js:19:8
+753 silly fetchPackageMetaData     at saved (C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\lib\cache\caching-client.js:168:7)
+753 silly fetchPackageMetaData     at C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+753 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+753 silly fetchPackageMetaData  error for install@^0.8.4 [Error: No compatible version found: install@^0.8.4
+753 silly fetchPackageMetaData Valid install targets:
+753 silly fetchPackageMetaData 0.1.8
+753 silly fetchPackageMetaData ]
+754 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader
+755 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+755 verbose headers   server: 'Artifactory/4.15.0',
+755 verbose headers   connection: 'close' }
+756 silly get cb [ 304,
+756 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+756 silly get     server: 'Artifactory/4.15.0',
+756 silly get     connection: 'close' } ]
+757 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader from cache
+758 verbose get saving react-hot-loader to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\react-hot-loader\.cache.json
+759 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react
+760 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+760 verbose headers   server: 'Artifactory/4.15.0',
+760 verbose headers   connection: 'close' }
+761 silly get cb [ 304,
+761 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+761 silly get     server: 'Artifactory/4.15.0',
+761 silly get     connection: 'close' } ]
+762 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react from cache
+763 verbose get saving babel-preset-react to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\babel-preset-react\.cache.json
+764 silly resolveWithNewModule react-hot-loader@1.3.1 checking installable status
+765 silly cache add args [ 'react-hot-loader@^1.3.1', null ]
+766 verbose cache add spec react-hot-loader@^1.3.1
+767 silly cache add parsed spec Result {
+767 silly cache add   raw: 'react-hot-loader@^1.3.1',
+767 silly cache add   scope: null,
+767 silly cache add   name: 'react-hot-loader',
+767 silly cache add   rawSpec: '^1.3.1',
+767 silly cache add   spec: '>=1.3.1 <2.0.0',
+767 silly cache add   type: 'range' }
+768 silly addNamed react-hot-loader@>=1.3.1 <2.0.0
+769 verbose addNamed ">=1.3.1 <2.0.0" is a valid semver range for react-hot-loader
+770 silly addNameRange { name: 'react-hot-loader',
+770 silly addNameRange   range: '>=1.3.1 <2.0.0',
+770 silly addNameRange   hasData: false }
+771 silly mapToRegistry name react-hot-loader
+772 silly mapToRegistry using default registry
+773 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+774 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader
+775 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader not in flight; fetching
+776 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server
+777 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+777 verbose headers   server: 'Artifactory/4.15.0',
+777 verbose headers   connection: 'close' }
+778 silly get cb [ 304,
+778 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+778 silly get     server: 'Artifactory/4.15.0',
+778 silly get     connection: 'close' } ]
+779 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server from cache
+780 verbose get saving webpack-dev-server to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\webpack-dev-server\.cache.json
+781 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader
+782 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+782 verbose headers   server: 'Artifactory/4.15.0',
+782 verbose headers   connection: 'close' }
+783 silly get cb [ 304,
+783 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+783 silly get     server: 'Artifactory/4.15.0',
+783 silly get     connection: 'close' } ]
+784 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader from cache
+785 verbose get saving css-loader to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\css-loader\.cache.json
+786 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader
+787 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+787 verbose headers   server: 'Artifactory/4.15.0',
+787 verbose headers   connection: 'close' }
+788 silly get cb [ 304,
+788 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+788 silly get     server: 'Artifactory/4.15.0',
+788 silly get     connection: 'close' } ]
+789 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader from cache
+790 verbose get saving style-loader to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\style-loader\.cache.json
+791 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015
+792 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+792 verbose headers   server: 'Artifactory/4.15.0',
+792 verbose headers   connection: 'close' }
+793 silly get cb [ 304,
+793 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+793 silly get     server: 'Artifactory/4.15.0',
+793 silly get     connection: 'close' } ]
+794 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015 from cache
+795 verbose get saving babel-preset-es2015 to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\babel-preset-es2015\.cache.json
+796 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader
+797 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+797 verbose headers   server: 'Artifactory/4.15.0',
+797 verbose headers   connection: 'close' }
+798 silly get cb [ 304,
+798 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+798 silly get     server: 'Artifactory/4.15.0',
+798 silly get     connection: 'close' } ]
+799 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader from cache
+800 verbose get saving babel-loader to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\babel-loader\.cache.json
+801 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack
+802 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+802 verbose headers   server: 'Artifactory/4.15.0',
+802 verbose headers   connection: 'close' }
+803 silly get cb [ 304,
+803 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+803 silly get     server: 'Artifactory/4.15.0',
+803 silly get     connection: 'close' } ]
+804 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack from cache
+805 verbose get saving webpack to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\webpack\.cache.json
+806 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/react-hot-loader not expired, no request
+807 silly addNameRange number 2 { name: 'react-hot-loader',
+807 silly addNameRange   range: '>=1.3.1 <2.0.0',
+807 silly addNameRange   hasData: true }
+808 silly addNameRange versions [ 'react-hot-loader', [ '3.0.0-beta.6', '1.3.0', '1.3.1' ] ]
+809 silly addNamed react-hot-loader@1.3.1
+810 verbose addNamed "1.3.1" is a plain semver version for react-hot-loader
+811 silly resolveWithNewModule babel-preset-react@6.24.1 checking installable status
+812 silly cache add args [ 'babel-preset-react@^6.11.1', null ]
+813 verbose cache add spec babel-preset-react@^6.11.1
+814 silly cache add parsed spec Result {
+814 silly cache add   raw: 'babel-preset-react@^6.11.1',
+814 silly cache add   scope: null,
+814 silly cache add   name: 'babel-preset-react',
+814 silly cache add   rawSpec: '^6.11.1',
+814 silly cache add   spec: '>=6.11.1 <7.0.0',
+814 silly cache add   type: 'range' }
+815 silly addNamed babel-preset-react@>=6.11.1 <7.0.0
+816 verbose addNamed ">=6.11.1 <7.0.0" is a valid semver range for babel-preset-react
+817 silly addNameRange { name: 'babel-preset-react',
+817 silly addNameRange   range: '>=6.11.1 <7.0.0',
+817 silly addNameRange   hasData: false }
+818 silly mapToRegistry name babel-preset-react
+819 silly mapToRegistry using default registry
+820 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+821 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react
+822 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react not in flight; fetching
+823 silly resolveWithNewModule webpack-dev-server@2.4.4 checking installable status
+824 silly cache add args [ 'webpack-dev-server@^2.2.1', null ]
+825 verbose cache add spec webpack-dev-server@^2.2.1
+826 silly cache add parsed spec Result {
+826 silly cache add   raw: 'webpack-dev-server@^2.2.1',
+826 silly cache add   scope: null,
+826 silly cache add   name: 'webpack-dev-server',
+826 silly cache add   rawSpec: '^2.2.1',
+826 silly cache add   spec: '>=2.2.1 <3.0.0',
+826 silly cache add   type: 'range' }
+827 silly addNamed webpack-dev-server@>=2.2.1 <3.0.0
+828 verbose addNamed ">=2.2.1 <3.0.0" is a valid semver range for webpack-dev-server
+829 silly addNameRange { name: 'webpack-dev-server',
+829 silly addNameRange   range: '>=2.2.1 <3.0.0',
+829 silly addNameRange   hasData: false }
+830 silly mapToRegistry name webpack-dev-server
+831 silly mapToRegistry using default registry
+832 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+833 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server
+834 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server not in flight; fetching
+835 silly resolveWithNewModule babel-preset-es2015@6.24.1 checking installable status
+836 silly cache add args [ 'babel-preset-es2015@^6.9.0', null ]
+837 verbose cache add spec babel-preset-es2015@^6.9.0
+838 silly cache add parsed spec Result {
+838 silly cache add   raw: 'babel-preset-es2015@^6.9.0',
+838 silly cache add   scope: null,
+838 silly cache add   name: 'babel-preset-es2015',
+838 silly cache add   rawSpec: '^6.9.0',
+838 silly cache add   spec: '>=6.9.0 <7.0.0',
+838 silly cache add   type: 'range' }
+839 silly addNamed babel-preset-es2015@>=6.9.0 <7.0.0
+840 verbose addNamed ">=6.9.0 <7.0.0" is a valid semver range for babel-preset-es2015
+841 silly addNameRange { name: 'babel-preset-es2015',
+841 silly addNameRange   range: '>=6.9.0 <7.0.0',
+841 silly addNameRange   hasData: false }
+842 silly mapToRegistry name babel-preset-es2015
+843 silly mapToRegistry using default registry
+844 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+845 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015
+846 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015 not in flight; fetching
+847 silly resolveWithNewModule babel-loader@6.4.1 checking installable status
+848 silly cache add args [ 'babel-loader@^6.2.10', null ]
+849 verbose cache add spec babel-loader@^6.2.10
+850 silly cache add parsed spec Result {
+850 silly cache add   raw: 'babel-loader@^6.2.10',
+850 silly cache add   scope: null,
+850 silly cache add   name: 'babel-loader',
+850 silly cache add   rawSpec: '^6.2.10',
+850 silly cache add   spec: '>=6.2.10 <7.0.0',
+850 silly cache add   type: 'range' }
+851 silly addNamed babel-loader@>=6.2.10 <7.0.0
+852 verbose addNamed ">=6.2.10 <7.0.0" is a valid semver range for babel-loader
+853 silly addNameRange { name: 'babel-loader',
+853 silly addNameRange   range: '>=6.2.10 <7.0.0',
+853 silly addNameRange   hasData: false }
+854 silly mapToRegistry name babel-loader
+855 silly mapToRegistry using default registry
+856 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+857 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader
+858 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader not in flight; fetching
+859 silly resolveWithNewModule style-loader@0.13.2 checking installable status
+860 silly cache add args [ 'style-loader@^0.13.1', null ]
+861 verbose cache add spec style-loader@^0.13.1
+862 silly cache add parsed spec Result {
+862 silly cache add   raw: 'style-loader@^0.13.1',
+862 silly cache add   scope: null,
+862 silly cache add   name: 'style-loader',
+862 silly cache add   rawSpec: '^0.13.1',
+862 silly cache add   spec: '>=0.13.1 <0.14.0',
+862 silly cache add   type: 'range' }
+863 silly addNamed style-loader@>=0.13.1 <0.14.0
+864 verbose addNamed ">=0.13.1 <0.14.0" is a valid semver range for style-loader
+865 silly addNameRange { name: 'style-loader',
+865 silly addNameRange   range: '>=0.13.1 <0.14.0',
+865 silly addNameRange   hasData: false }
+866 silly mapToRegistry name style-loader
+867 silly mapToRegistry using default registry
+868 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+869 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader
+870 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader not in flight; fetching
+871 http 304 https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core
+872 verbose headers { date: 'Wed, 24 May 2017 15:49:07 GMT',
+872 verbose headers   server: 'Artifactory/4.15.0',
+872 verbose headers   connection: 'close' }
+873 silly get cb [ 304,
+873 silly get   { date: 'Wed, 24 May 2017 15:49:07 GMT',
+873 silly get     server: 'Artifactory/4.15.0',
+873 silly get     connection: 'close' } ]
+874 verbose etag https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core from cache
+875 verbose get saving babel-core to C:\Users\plr3269\AppData\Roaming\npm-cache\repo.usaa.com\artifactory\api\npm\usaa-npm-evaluation\babel-core\.cache.json
+876 silly resolveWithNewModule webpack@2.2.1 checking installable status
+877 silly cache add args [ 'webpack@^2.2.1', null ]
+878 verbose cache add spec webpack@^2.2.1
+879 silly cache add parsed spec Result {
+879 silly cache add   raw: 'webpack@^2.2.1',
+879 silly cache add   scope: null,
+879 silly cache add   name: 'webpack',
+879 silly cache add   rawSpec: '^2.2.1',
+879 silly cache add   spec: '>=2.2.1 <3.0.0',
+879 silly cache add   type: 'range' }
+880 silly addNamed webpack@>=2.2.1 <3.0.0
+881 verbose addNamed ">=2.2.1 <3.0.0" is a valid semver range for webpack
+882 silly addNameRange { name: 'webpack', range: '>=2.2.1 <3.0.0', hasData: false }
+883 silly mapToRegistry name webpack
+884 silly mapToRegistry using default registry
+885 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+886 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack
+887 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack not in flight; fetching
+888 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-react not expired, no request
+889 silly addNameRange number 2 { name: 'babel-preset-react',
+889 silly addNameRange   range: '>=6.11.1 <7.0.0',
+889 silly addNameRange   hasData: true }
+890 silly addNameRange versions [ 'babel-preset-react',
+890 silly addNameRange   [ '6.5.0', '6.24.1', '6.1.18', '6.16.0', '6.22.0' ] ]
+891 silly addNamed babel-preset-react@6.24.1
+892 verbose addNamed "6.24.1" is a plain semver version for babel-preset-react
+893 silly resolveWithNewModule css-loader@0.23.1 checking installable status
+894 silly cache add args [ 'css-loader@^0.23.1', null ]
+895 verbose cache add spec css-loader@^0.23.1
+896 silly cache add parsed spec Result {
+896 silly cache add   raw: 'css-loader@^0.23.1',
+896 silly cache add   scope: null,
+896 silly cache add   name: 'css-loader',
+896 silly cache add   rawSpec: '^0.23.1',
+896 silly cache add   spec: '>=0.23.1 <0.24.0',
+896 silly cache add   type: 'range' }
+897 silly addNamed css-loader@>=0.23.1 <0.24.0
+898 verbose addNamed ">=0.23.1 <0.24.0" is a valid semver range for css-loader
+899 silly addNameRange { name: 'css-loader', range: '>=0.23.1 <0.24.0', hasData: false }
+900 silly mapToRegistry name css-loader
+901 silly mapToRegistry using default registry
+902 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+903 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader
+904 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader not in flight; fetching
+905 silly cache afterAdd react-hot-loader@1.3.1
+906 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\react-hot-loader\1.3.1\package\package.json not in flight; writing
+907 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack-dev-server not expired, no request
+908 silly addNameRange number 2 { name: 'webpack-dev-server',
+908 silly addNameRange   range: '>=2.2.1 <3.0.0',
+908 silly addNameRange   hasData: true }
+909 silly addNameRange versions [ 'webpack-dev-server',
+909 silly addNameRange   [ '1.10.1',
+909 silly addNameRange     '2.1.0-beta.9',
+909 silly addNameRange     '2.4.4',
+909 silly addNameRange     '1.16.2',
+909 silly addNameRange     '1.14.0',
+909 silly addNameRange     '2.3.0',
+909 silly addNameRange     '1.14.1' ] ]
+910 silly addNamed webpack-dev-server@2.4.4
+911 verbose addNamed "2.4.4" is a plain semver version for webpack-dev-server
+912 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-preset-es2015 not expired, no request
+913 silly addNameRange number 2 { name: 'babel-preset-es2015',
+913 silly addNameRange   range: '>=6.9.0 <7.0.0',
+913 silly addNameRange   hasData: true }
+914 silly addNameRange versions [ 'babel-preset-es2015',
+914 silly addNameRange   [ '6.24.1',
+914 silly addNameRange     '6.1.18',
+914 silly addNameRange     '6.24.0',
+914 silly addNameRange     '6.16.0',
+914 silly addNameRange     '6.9.0',
+914 silly addNameRange     '6.6.0',
+914 silly addNameRange     '6.22.0' ] ]
+915 silly addNamed babel-preset-es2015@6.24.1
+916 verbose addNamed "6.24.1" is a plain semver version for babel-preset-es2015
+917 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-loader not expired, no request
+918 silly addNameRange number 2 { name: 'babel-loader', range: '>=6.2.10 <7.0.0', hasData: true }
+919 silly addNameRange versions [ 'babel-loader',
+919 silly addNameRange   [ '6.4.1', '6.2.0', '6.2.10', '6.2.4', '5.1.4', '6.2.5' ] ]
+920 silly addNamed babel-loader@6.4.1
+921 verbose addNamed "6.4.1" is a plain semver version for babel-loader
+922 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/style-loader not expired, no request
+923 silly addNameRange number 2 { name: 'style-loader',
+923 silly addNameRange   range: '>=0.13.1 <0.14.0',
+923 silly addNameRange   hasData: true }
+924 silly addNameRange versions [ 'style-loader',
+924 silly addNameRange   [ '0.13.2', '0.12.3', '0.13.1', '0.12.2', '0.8.3' ] ]
+925 silly addNamed style-loader@0.13.2
+926 verbose addNamed "0.13.2" is a plain semver version for style-loader
+927 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/webpack not expired, no request
+928 silly addNameRange number 2 { name: 'webpack', range: '>=2.2.1 <3.0.0', hasData: true }
+929 silly addNameRange versions [ 'webpack',
+929 silly addNameRange   [ '1.10.0',
+929 silly addNameRange     '1.11.0',
+929 silly addNameRange     '1.12.13',
+929 silly addNameRange     '1.12.11',
+929 silly addNameRange     '1.8.11',
+929 silly addNameRange     '2.2.1',
+929 silly addNameRange     '1.12.9',
+929 silly addNameRange     '2.1.0-beta.25',
+929 silly addNameRange     '1.13.0',
+929 silly addNameRange     '2.2.0-rc.3',
+929 silly addNameRange     '2.1.0-beta.28',
+929 silly addNameRange     '1.13.1',
+929 silly addNameRange     '1.13.2' ] ]
+930 silly addNamed webpack@2.2.1
+931 verbose addNamed "2.2.1" is a plain semver version for webpack
+932 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/css-loader not expired, no request
+933 silly addNameRange number 2 { name: 'css-loader', range: '>=0.23.1 <0.24.0', hasData: true }
+934 silly addNameRange versions [ 'css-loader',
+934 silly addNameRange   [ '0.27.3',
+934 silly addNameRange     '0.16.0',
+934 silly addNameRange     '0.15.1',
+934 silly addNameRange     '0.9.1',
+934 silly addNameRange     '0.23.1',
+934 silly addNameRange     '0.25.0',
+934 silly addNameRange     '0.28.0' ] ]
+935 silly addNamed css-loader@0.23.1
+936 verbose addNamed "0.23.1" is a plain semver version for css-loader
+937 silly cache afterAdd babel-preset-react@6.24.1
+938 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-preset-react\6.24.1\package\package.json not in flight; writing
+939 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\react-hot-loader\1.3.1\package\package.json written
+940 silly resolveWithNewModule babel-core@6.24.1 checking installable status
+941 silly cache add args [ 'babel-core@^6.22.1', null ]
+942 verbose cache add spec babel-core@^6.22.1
+943 silly cache add parsed spec Result {
+943 silly cache add   raw: 'babel-core@^6.22.1',
+943 silly cache add   scope: null,
+943 silly cache add   name: 'babel-core',
+943 silly cache add   rawSpec: '^6.22.1',
+943 silly cache add   spec: '>=6.22.1 <7.0.0',
+943 silly cache add   type: 'range' }
+944 silly addNamed babel-core@>=6.22.1 <7.0.0
+945 verbose addNamed ">=6.22.1 <7.0.0" is a valid semver range for babel-core
+946 silly addNameRange { name: 'babel-core', range: '>=6.22.1 <7.0.0', hasData: false }
+947 silly mapToRegistry name babel-core
+948 silly mapToRegistry using default registry
+949 silly mapToRegistry registry https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation
+950 silly mapToRegistry uri https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core
+951 verbose addNameRange registry:https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core not in flight; fetching
+952 silly cache afterAdd babel-preset-es2015@6.24.1
+953 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-preset-es2015\6.24.1\package\package.json not in flight; writing
+954 silly cache afterAdd babel-loader@6.4.1
+955 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-loader\6.4.1\package\package.json not in flight; writing
+956 silly cache afterAdd webpack-dev-server@2.4.4
+957 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\webpack-dev-server\2.4.4\package\package.json not in flight; writing
+958 silly cache afterAdd style-loader@0.13.2
+959 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\style-loader\0.13.2\package\package.json not in flight; writing
+960 silly cache afterAdd css-loader@0.23.1
+961 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\css-loader\0.23.1\package\package.json not in flight; writing
+962 silly cache afterAdd webpack@2.2.1
+963 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\webpack\2.2.1\package\package.json not in flight; writing
+964 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-preset-react\6.24.1\package\package.json written
+965 verbose get https://repo.usaa.com/artifactory/api/npm/usaa-npm-evaluation/babel-core not expired, no request
+966 silly addNameRange number 2 { name: 'babel-core', range: '>=6.22.1 <7.0.0', hasData: true }
+967 silly addNameRange versions [ 'babel-core',
+967 silly addNameRange   [ '5.8.25',
+967 silly addNameRange     '5.8.24',
+967 silly addNameRange     '5.8.34',
+967 silly addNameRange     '5.8.23',
+967 silly addNameRange     '6.17.0',
+967 silly addNameRange     '6.7.7',
+967 silly addNameRange     '5.8.38',
+967 silly addNameRange     '6.9.1',
+967 silly addNameRange     '6.2.0',
+967 silly addNameRange     '6.2.1',
+967 silly addNameRange     '6.24.1',
+967 silly addNameRange     '6.24.0',
+967 silly addNameRange     '6.23.1',
+967 silly addNameRange     '6.14.0',
+967 silly addNameRange     '6.16.0',
+967 silly addNameRange     '6.13.2',
+967 silly addNameRange     '6.21.0',
+967 silly addNameRange     '5.8.22',
+967 silly addNameRange     '5.8.21',
+967 silly addNameRange     '6.22.1' ] ]
+968 silly addNamed babel-core@6.24.1
+969 verbose addNamed "6.24.1" is a plain semver version for babel-core
+970 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-preset-es2015\6.24.1\package\package.json written
+971 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-loader\6.4.1\package\package.json written
+972 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\webpack-dev-server\2.4.4\package\package.json written
+973 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\style-loader\0.13.2\package\package.json written
+974 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\css-loader\0.23.1\package\package.json written
+975 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\webpack\2.2.1\package\package.json written
+976 silly cache afterAdd babel-core@6.24.1
+977 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-core\6.24.1\package\package.json not in flight; writing
+978 verbose afterAdd C:\Users\plr3269\AppData\Roaming\npm-cache\babel-core\6.24.1\package\package.json written
+979 silly rollbackFailedOptional Starting
+980 silly rollbackFailedOptional Finishing
+981 silly runTopLevelLifecycles Starting
+982 silly runTopLevelLifecycles Finishing
+983 silly install printInstalled
+984 verbose stack Error: No compatible version found: install@^0.8.4
+984 verbose stack Valid install targets:
+984 verbose stack 0.1.8
+984 verbose stack
+984 verbose stack     at pickVersionFromRegistryDocument (C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\lib\fetch-package-metadata.js:156:16)
+984 verbose stack     at C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\node_modules\iferr\index.js:13:50
+984 verbose stack     at C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\lib\utils\pulse-till-done.js:19:8
+984 verbose stack     at saved (C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\lib\cache\caching-client.js:168:7)
+984 verbose stack     at C:\Users\plr3269\AppData\Roaming\npm\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+984 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+985 verbose cwd C:\dev\workspace\training\TeamTreehouse\React-Router-Basics\1-getting-started-with-react-router\video-3\course-directory_includes-webpack-2
+986 error Windows_NT 6.1.7601
+987 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\plr3269\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install"
+988 error node v4.2.2
+989 error npm  v3.5.0
+990 error No compatible version found: install@^0.8.4
+990 error Valid install targets:
+990 error 0.1.8
+991 error If you need help, you may report this error at:
+991 error     <https://github.com/npm/npm/issues>
+992 verbose exit [ 1, true ]

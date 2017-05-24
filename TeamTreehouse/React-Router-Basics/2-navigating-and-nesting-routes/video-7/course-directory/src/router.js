@@ -1,6 +1,6 @@
 // Libs
 import React from 'react';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
 
 // Components
 import App from './components/App';
@@ -22,6 +22,7 @@ const routes = (
       <Route path="teachers" component={Teachers} />
       
       <Route path="courses" component={Courses}>
+        <IndexRedirect to="html" />
         <Route path="html" component={HTML} />
         <Route path="css" component={CSS} />
         <Route path="javascript" component={JavaScript} />
