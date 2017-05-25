@@ -14,6 +14,7 @@ import NotFound from './components/NotFound';
 // import JavaScript from './components/courses/JavaScript';
 import CourseContainer from './components/courses/CourseContainer';
 import CourseList from './data/courses';
+import Featured from './components/Featured';
 
 // Routes
 const routes = (
@@ -28,6 +29,7 @@ const routes = (
         <Route path="css" component={CourseContainer} data={CourseList.CSS} />
         <Route path="javascript" component={CourseContainer} data={CourseList.JS} />
       </Route>
+      <Route path="featured/:topic/:name" component={Featured} />
       <Route path="*" component={NotFound} />
     </Route>
   </Router>
