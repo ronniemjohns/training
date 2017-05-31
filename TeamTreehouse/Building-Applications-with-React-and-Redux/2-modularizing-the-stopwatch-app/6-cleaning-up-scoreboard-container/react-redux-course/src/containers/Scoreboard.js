@@ -23,7 +23,7 @@ export default class Scoreboard extends Component {
             },
         ],
     };
-   
+
   onScoreChange = (index, delta) => {
     this.state.players[index].score += delta;
     this.setState(this.state);
