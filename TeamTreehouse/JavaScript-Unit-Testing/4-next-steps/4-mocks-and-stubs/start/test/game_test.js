@@ -18,4 +18,28 @@ describe('GAME INSTANCE FUNCTIONS', function () {
       expect(actual).to.be.false;
     });
   });
+
+  describe('takeTurn', function() {
+     var takeTurn = require('../game_logic/game_instance').takeTurn;
+     var guess;
+     var player;
+
+     beforeEach(function (){
+        guess = function() {
+           return [0,0];
+        } ;
+        player = {
+            ships: [
+                {
+                    locations: [[0,0]],
+                    damage: []
+                }
+            ]
+        }
+     });
+     it('should return false if game ends', function() {
+         var actual = takeTurn(player, guess);
+         expect(actual).to.be.false;
+     });
+  });
 });
