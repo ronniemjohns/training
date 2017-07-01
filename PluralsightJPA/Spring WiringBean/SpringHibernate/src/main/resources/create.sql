@@ -1,0 +1,23 @@
+DROP SCHEMA IF EXISTS my_schema;
+
+CREATE SCHEMA my_schema;
+
+SET SCHEMA my_schema;
+
+DROP TABLE IF EXISTS person_tbl;
+
+CREATE TABLE my_schema.person_tbl {
+	NAME VARCHAR(75) NOT NULL,
+	AGE  INTEGER NOT NULL,
+	PHONE_NUMBER VARCHAR(15),
+	ADDRESS VARCHAR(75)
+	};
+	
+INSERT INTO my_schema.person_tbl values ('AUNT JOSEPHINE', 65, '976-123-4567', '1900 THE COUNTRY, BACKWOODS AL');
+INSERT INTO my_schema.person_tbl values ('UNCLE JIMMY', 65, '972-444-4567', '1900 THE COUNTRY - APT B, BACKWOODS AL');
+INSERT INTO my_schema.person_tbl values ('COUSIN BO', 65, '817-623-4567', 'NOWHERE STREET, MIDDLE OF NOWHERE AL');
+
+
+
+
+}

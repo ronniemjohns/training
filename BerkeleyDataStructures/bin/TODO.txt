@@ -1,0 +1,8 @@
+1. Create Pascal's triangle to show how multidimensional arrays work
+2. Implement your own ArrayList 
+	a. how do you create it?
+	b. how do you update it?
+	c. how do you add an item?
+	d. how do you delete an item?
+	e. within the class, list advantages & disadvantages
+3. same with your own LinkedList

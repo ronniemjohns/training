@@ -1,0 +1,51 @@
+apply plugin: 'java'
+
+
+project.task("Task1")
+
+task("Task2")    // (project is implied and not necessary)
+
+task "Task3"    // parentheses aren't really necessary either
+
+task Task4      // for pete's sake, quotes aren't either.
+Task4.description = "yo momma"
+
+Task4.doLast {
+	println "This is task 4"
+}
+
+
+Task3 << {
+   println "this is task 3"   // << functions as a doLast.  this is stupid.
+}
+
+
+task Task5 << {println "this is task 5"}
+
+Task5 << {println "task 5 do something else"}
+
+task Task6 {
+	description "This is task 6"
+	doFirst { println "this is task6 do first"}
+	doLast {
+		println "this is task 6s do last"
+	}
+}
+
+
+
+
+
+
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.12'
+}
+
+task hello {
+	doLast {
+		println "Hello, Gradle"
+	}
+}
+
+/*  each task has a life cycle, can have properties has actions...  has dependencies  */

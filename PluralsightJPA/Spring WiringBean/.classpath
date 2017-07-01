@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/java/libraries/apache-ant-1.9.4/lib/ant.jar"/>
+	<classpathentry kind="lib" path="C:/java/libraries/apache-ant-1.9.4/lib/ant-antlr.jar"/>
+	<classpathentry kind="lib" path="C:/java/libraries/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/java/libraries/dom4j-1.6.1/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/kepler/eclipse/plugins/org.apache.log4j_1.2.15.v201012070815.jar"/>
+	<classpathentry kind="lib" path="C:/java/spring-framework-4.1.1.RELEASE/libs/spring-beans-4.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/java/spring-framework-4.1.1.RELEASE/libs/spring-context-4.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/java/spring-framework-4.1.1.RELEASE/libs/spring-context-support-4.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/java/spring-framework-4.1.1.RELEASE/libs/spring-core-4.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/java/spring-framework-4.1.1.RELEASE/libs/spring-expression-4.1.1.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

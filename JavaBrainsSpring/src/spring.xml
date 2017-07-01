@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+
+   <bean id="parentTriangle"  class="org.koushik.javabrains.Triangle" abstract="true" >
+      <property name="type" value="Equilateral" />  
+      <property name="pointA"> 
+         <ref bean="zeroPoint" />  
+      </property>
+   </bean>
+   
+    <bean id="triangle1" class="org.koushik.javabrains.Triangle" parent="parentTriangle">
+       <property name="pointA" ref="pointA" /> 
+    </bean>
+      
+    <bean id="triangle2" class="org.koushik.javabrains.Triangle" >
+       <property name="pointB" ref="pointB" /> 
+    </bean>
+
+
+   <bean id="pointA" class="org.koushik.javabrains.Point">
+      <property name="x" value="${pointA.pointX}" />
+      <property name="y" value="${pointA.pointY}" />
+   </bean>
+    <bean id="pointB" class="org.koushik.javabrains.Point">
+      <property name="x" value="-20" />
+      <property name="y" value="-10" />
+   </bean>
+    <bean id="pointC" class="org.koushik.javabrains.Point">
+      <property name="x" value="-20" />
+      <property name="y" value="10" />
+   </bean>
+   
+   <bean id="zeroPoint" class="org.koushik.javabrains.Point">
+      <property name="x" value="0" />
+      <property name="y" value="0" />
+   </bean>
+   
+   
+   <bean id="triangle" class="org.koushik.javabrains.Triangle" >
+      <property name="type" value="Equilateral" />  
+      <property name="pointA"> 
+         <ref bean="zeroPoint" />  
+      </property>
+      <property name="pointB" >   <!--  inner bean for pointB and C -->
+         <bean class="org.koushik.javabrains.Point">
+            <property name="x" value="-20" />
+            <property name="y" value="-10" />
+         </bean>
+      </property>
+      <property name="pointC">
+         <bean class="org.koushik.javabrains.Point">
+            <property name="x" value="-20" />
+            <property name="y" value="10" />
+         </bean>
+      </property>
+   </bean>
+   
+
+   
+   <bean id="rectangle" class="org.koushik.javabrains.Rectangle" scope="prototype">
+      <constructor-arg value="Square" />
+      <constructor-arg value="Black" />
+      <property name="points">
+         <list>
+            <ref bean="topLeft" />
+            <ref bean="topRight" />
+            <ref bean="bottomLeft" />
+            <ref bean="bottomRight" />
+         </list>
+      </property>
+   </bean>
+   
+   <bean id="threeDRectangle" class="org.koushik.javabrains.Rectangle" parent="rectangle">
+      <property name="points">
+         <list merge="true">
+            <ref bean="front" />
+            <ref bean="back" />
+         </list>
+      </property>
+   </bean>
+   
+     <!-- 
+   <bean id="circle" class="org.koushik.javabrains.Circle" >
+      <constructor-arg type="int" value="20" />
+      <constructor-arg type="org.koushik.javabrains.Point" ref="pointA" />
+   </bean>
+    -->
+   <!--   -->
+   
+   <bean id="circle" class="org.koushik.javabrains.Circle" >
+      <property name="diameter" value="20" />
+      <property name="center"   ref="pointA" />
+      <property name="color"    value = "Black" />
+   </bean>
+     
+   <alias name="triangle" alias="triangle-alias"/>
+   
+   <bean id="topLeft" class="org.koushik.javabrains.Point">
+      <property name="x" value = "-20" />
+      <property name="y" value = "20" />
+   </bean>
+   
+   <bean id="topRight" class="org.koushik.javabrains.Point">
+      <property name="x" value = "20" />
+      <property name="y" value = "20" />
+   </bean>
+   
+   <bean id="bottomLeft" class="org.koushik.javabrains.Point">
+      <property name="x" value = "-20" />
+      <property name="y" value = "0" />
+   </bean>
+   
+   <bean id="bottomRight" class="org.koushik.javabrains.Point">
+      <property name="x" value = "20" />
+      <property name="y" value = "0" />
+   </bean>
+   
+   <bean id="front" class="org.koushik.javabrains.Point">
+      <property name="x" value = "12345" />
+      <property name="y" value = "0" />
+   </bean>
+   
+   <bean id="back" class="org.koushik.javabrains.Point">
+      <property name="x" value = "20" />
+      <property name="y" value = "12345" />
+   </bean>
+   
+   
+   <bean id="autowiredTriangle" class="org.koushik.javabrains.TriangleAutowired" autowire="byName" >
+
+   </bean>
+   
+   <!-- 
+   <bean class="org.koushik.javabrains.DisplayNameBeanPostProcessor" />
+    -->
+    
+   <!-- <bean class="org.koushik.javabrains.MyBeanFactoryPostProcessor" />  -->
+   
+   <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
+      <property name="locations" value="app.properties" />
+   </bean>
+   
+   <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
+   
+
+</beans>
