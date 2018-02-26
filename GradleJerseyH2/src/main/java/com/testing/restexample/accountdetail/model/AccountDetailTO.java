@@ -1,17 +1,17 @@
 package com.testing.restexample.accountdetail.model;
 
-public class AccountDetail {
+public class AccountDetailTO {
 	
 	private String customerName;
 	private String accountName;
 	private double balance;
 	private int accountNumber;
 	
-	public AccountDetail() {
+	public AccountDetailTO() {
 		
 	}
 
-	public AccountDetail(String customerName, String accountName, int accountNumber, double balance) {
+	public AccountDetailTO(String customerName, String accountName, int accountNumber, double balance) {
 		super();
 		this.customerName = customerName;
 		this.accountName = accountName;

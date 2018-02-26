@@ -3,15 +3,22 @@ package com.testing.restexample.accountdetail.services;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.testing.restexample.accountdetail.model.AccountDetail;
+import com.testing.restexample.accountdetail.dao.DatabaseManager;
+import com.testing.restexample.accountdetail.model.AccountDetailTO;
 
 public class AccountDetailService {
 	
-	public List<AccountDetail> getAllAccountDetails() {
+	DatabaseManager dbManager;
+	
+	public AccountDetailService() {
+		dbManager = new DatabaseManager();
+	}
+	
+	public List<AccountDetailTO> getAllAccountDetails() {
 		
 		System.out.println("getAllAccountDetails");
 		
-		List<AccountDetail> accountDetails = new ArrayList<>();
+		List<AccountDetailTO> accountDetails = new ArrayList<>();
 		
 		// temporary
 		accountDetails = getTempAccountDetail();
@@ -19,12 +26,12 @@ public class AccountDetailService {
 		return accountDetails;
 	}
 	
-	private List<AccountDetail> getTempAccountDetail() {
+	private List<AccountDetailTO> getTempAccountDetail() {
 		System.out.println("getTempAccountDetail");
-		List<AccountDetail> accountDetails = new ArrayList<>();
+		List<AccountDetailTO> accountDetails = new ArrayList<>();
 		
-		AccountDetail accountDetail1 = new AccountDetail("FirstCustomer", "FirstAccount", 100001, 111.11);
-		AccountDetail accountDetail2 = new AccountDetail("SecondCustomer", "SecondAccount", 100002, 222.22);
+		AccountDetailTO accountDetail1 = new AccountDetailTO("FirstCustomer", "FirstAccount", 100001, 111.11);
+		AccountDetailTO accountDetail2 = new AccountDetailTO("SecondCustomer", "SecondAccount", 100002, 222.22);
 		
 		accountDetails.add(accountDetail1);
 		accountDetails.add(accountDetail2);

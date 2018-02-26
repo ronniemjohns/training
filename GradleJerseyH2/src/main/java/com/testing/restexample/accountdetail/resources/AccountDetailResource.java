@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.testing.restexample.accountdetail.model.AccountDetail;
+import com.testing.restexample.accountdetail.model.AccountDetailTO;
 import com.testing.restexample.accountdetail.services.AccountDetailService;
 
 @Path("/account-details")
@@ -17,7 +17,7 @@ public class AccountDetailResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<AccountDetail> getAccountDetails() {
+	public List<AccountDetailTO> getAccountDetails() {
 
 		System.out.println("Resource -> getAccountDetails");
 		return accountDetailService.getAllAccountDetails();
