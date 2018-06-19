@@ -3,6 +3,7 @@
  */
 import org.junit.Test;
 import static org.junit.Assert.*;
+import com.testing.spock.App;
 
 public class AppTest {
     @Test public void testAppHasAGreeting() {
